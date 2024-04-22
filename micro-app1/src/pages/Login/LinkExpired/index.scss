@@ -1,0 +1,17 @@
+@import '../../../styles//global-settings.scss';
+
+.linkExpired {
+    height: 70%;
+    .login-btn {
+        margin-top: 80px;
+    }
+    #login_form .copyright-text {
+        margin-top: 100px;
+    }
+    .forgot-pass {
+        margin-bottom: 0;
+    }
+    .linkExpiredHeading {
+        text-align: center;
+    }
+}

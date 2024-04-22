@@ -1,0 +1,36 @@
+@import '../../../../styles/global-settings.scss';
+.setNewPasswordByAdmin {
+    padding: 64px;
+    .setNewPassword {
+        .login-btn {
+            margin-top: 80px;
+        }
+        .tooltip-main {
+            position: relative;
+            .tooltip-circleinfo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .ant-tooltip-open {
+                    > img {
+                        margin-right: 8px;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        #login_form {
+            .ant-form-item-label > label {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+    .tooltip li > img {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+    }
+}

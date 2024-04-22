@@ -1,0 +1,64 @@
+@import '../../../../styles/global-settings.scss';
+
+.reductionInBoilerPlateWrapper {
+    width: 100%;
+
+    height: 104px;
+
+    margin-bottom: 16px;
+
+    font-weight: 500;
+
+    .ant-card-body {
+        height: 100%;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 145px;
+    }
+
+    &__heading-div {
+        color: $title-85;
+        font-size: 16px;
+    }
+
+    &__subheading {
+        color: $title-45;
+
+        font-size: 12px;
+
+        font-weight: 400;
+
+        letter-spacing: 0.72px;
+        white-space: nowrap;
+    }
+
+    &__charts {
+        width: 100%;
+
+        height: 100%;
+        .highcharts-container {
+            @include flexprob;
+            .highcharts-point {
+            }
+        }
+
+        // display: flex;
+
+        // justify-content: flex-end; /* Horizontally center the content */
+
+        // align-items: center; /* Vertically center the content */
+
+        // height: 10vh; /* Set a desired height for the container */
+    }
+
+    .highcharts-root {
+        height: 100%;
+
+        width: 75%;
+    }
+}

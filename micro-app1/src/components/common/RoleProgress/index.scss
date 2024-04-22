@@ -1,0 +1,55 @@
+@import '../../../styles/mixins';
+@import '../../../styles/fontStyles.scss';
+@import '../../../styles/utilities.helper';
+
+.progressBar {
+    justify-content: flex-end;
+    &__stepCount {
+        @include textfontstyle;
+        color: $title-85;
+        border-right: 1px solid $border;
+    }
+
+    &__stepper {
+        @include textfontstyle;
+        color: $title-45;
+    }
+
+    &__progressWrapper {
+        display: flex;
+        width: 130px;
+        height: 10px;
+        gap: 5px;
+    }
+
+    &__stepCountValue {
+        @include flexprob;
+        gap: 5px;
+        height: 20px;
+
+        span {
+            @include textfontstyle;
+            color: $title-85;
+        }
+    }
+
+    .itemProgress {
+        flex: 1;
+        background-color: $progress-inactive-bg;
+        border-radius: 10px;
+
+        &--completed {
+            border: 1px solid $progress-border;
+            flex: 1;
+            background-color: $progress-border;
+            border-radius: 10px;
+        }
+
+        &--active {
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid $progress-border;
+            flex: 1;
+            border-radius: 10px;
+        }
+    }
+}

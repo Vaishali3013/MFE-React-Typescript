@@ -1,0 +1,55 @@
+@import '../../../../styles/global-settings.scss';
+
+.reportConfigurator {
+    background: $neutral-1;
+    height: 116px;
+    .reportConfiguratorWrapperScrolContent {
+        overflow-y: scroll;
+        height: calc(100vh - 165px);
+    }
+    .reportConfiguratorWrapper {
+        height: calc(100vh - 196px);
+        @include fontTextStyle;
+
+        &__cardContent {
+            height: 100%;
+            .ant-card-body {
+                padding: 0 !important;
+            }
+        }
+        &__cardBody {
+            display: flex;
+            flex-direction: column;
+            padding: 0 24px 24px 24px;
+            overflow-y: scroll;
+            height: 550px;
+        }
+        &__addButton {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            padding: 20px 20px;
+        }
+        .customButton {
+            width: 130px;
+        }
+        &__cards {
+            @include flexprob;
+            flex-direction: column;
+            gap: 20px;
+            padding: 15px;
+
+            .ant-card.ant-card-bordered {
+                box-shadow: 0px 4px 7px $box-shadow;
+                width: 45%;
+            }
+            .ant-card-body {
+                padding: 12px !important;
+            }
+        }
+        .reportConfigurator__footerContent {
+            @include flexprob;
+            gap: 10px;
+        }
+    }
+}

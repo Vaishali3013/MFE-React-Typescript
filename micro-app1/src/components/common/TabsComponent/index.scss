@@ -1,0 +1,29 @@
+@import '../../../styles/global-settings.scss';
+
+.tabsComponent {
+    .ant-tabs-content-holder {
+        background: $neutral-6;
+    }
+}
+.implementation__tabsSection {
+    margin-top: 2px;
+    height: 100%;
+    .ant-tabs-content {
+        height: 100%;
+        .ant-tabs-tabpane {
+            height: 100%;
+        }
+    }
+    .ant-tabs {
+        height: 100%;
+    }
+    .ant-tabs-nav {
+        margin-left: 8px;
+    }
+    .assignedAttribute__searchBox {
+        margin-left: 8px;
+    }
+    .ant-tabs-nav-wrap {
+        margin-left: 8px;
+    }
+}

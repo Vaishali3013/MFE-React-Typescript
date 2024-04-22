@@ -1,0 +1,19 @@
+@import '../../../styles/global-settings.scss';
+
+.userProfile {
+  &__tabsComponent {
+    .ant-tabs {
+      .ant-tabs-nav {
+        padding-left: 24px;
+        background: $neutral-1;
+        margin: 0;
+      }
+      .ant-tabs-content {
+        .ant-tabs-tabpane {
+          overflow-y: scroll;
+          height: calc(100vh - 198px);
+        }
+      }
+    }
+  }
+}

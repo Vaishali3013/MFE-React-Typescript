@@ -1,0 +1,42 @@
+@import '../../../styles/global-settings.scss';
+
+.uploadButton {
+  &__icon {
+    size: 12px;
+  }
+  &__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    text-align: center;
+
+    /* Character / Secondary .45 */
+
+    color: $title-45;
+  }
+}
+
+.uploadImage {
+  .ant-upload-list-item {
+    border: none !important;
+  }
+  &__modalImage {
+    width: 100%;
+  }
+  .ant-upload-list-item-container {
+    .ant-tooltip {
+      display: none;
+    }
+    .ant-upload-list-item {
+      .ant-upload-list-item-actions {
+        .anticon-eye {
+          display: none;
+        }
+      }
+    }
+  }
+}

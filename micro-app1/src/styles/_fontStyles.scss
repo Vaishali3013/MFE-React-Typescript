@@ -1,0 +1,16 @@
+//fontWeight
+
+$weights: '300', '400', '500', '600', '700', '800';
+@each $fw in $weights {
+    .fw-#{$fw} {
+        font-weight: #{$fw} !important;
+    }
+}
+
+//fontSize
+$size: '12', '14', '16', '18', '20', '24', '30', '32', '54';
+@each $fs in $size {
+    .fs-#{$fs} {
+        font-size: #{$fs}px;
+    }
+}

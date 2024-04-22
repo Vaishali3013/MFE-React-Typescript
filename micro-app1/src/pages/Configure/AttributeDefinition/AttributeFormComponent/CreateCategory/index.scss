@@ -1,0 +1,51 @@
+@import '../../../../../styles/global-settings.scss';
+
+.createCategoryContent {
+    padding: 0px !important;
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $neutral-4;
+        padding: 12px;
+
+        &__name {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+    &__bodyWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px 40px 10px;
+    }
+    &__body {
+        display: flex;
+        gap: 4px;
+
+        &__label {
+            width: 30%;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0px 10px 0px;
+        border-top: 1px solid $neutral-4;
+
+        &__buttonDiv {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+    }
+}
+
+.mandatoryClass {
+    color: $red-3;
+}

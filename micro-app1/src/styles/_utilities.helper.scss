@@ -1,0 +1,41 @@
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.white-space-nwrap {
+  white-space: nowrap;
+}
+.text-right {
+  text-align: right;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.letterSpacing-20 {
+  letter-spacing: 3.2px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.display-none {
+  display: none;
+}
+.error-message {
+  color: #fd3d33;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+input[type='number'].hide-sorting::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mr-8{
+  margin-right: 8px;
+}

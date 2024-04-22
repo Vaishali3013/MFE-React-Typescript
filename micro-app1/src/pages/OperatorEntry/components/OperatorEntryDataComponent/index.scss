@@ -1,0 +1,56 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.operatorComponentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    &__above {
+        display: flex;
+    }
+    &__titleSection {
+        width: 165px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $title-85;
+        margin-right: 8px;
+    }
+
+    &__save {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__saveButton {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100px;
+        height: 32px;
+    }
+    &__inputSection {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    &__section {
+        width: 256px;
+    }
+    .ant-select-selector {
+        border-radius: 2px !important;
+    }
+    &__descriptionSection {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $gray-8;
+    }
+}

@@ -1,0 +1,128 @@
+@import '../../../../styles/colorVariable';
+
+.groupDrawer__wrapper {
+  height: 100%;
+  .groupDrawer {
+    &__Input {
+      border-radius: 2px;
+    }
+    &__noData{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 39dvh;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+    &__listItem {
+      list-style: none;
+  
+      .ant-checkbox {
+        padding: 0px 31px 0px 16px;
+      }
+      margin-top: 10px;   
+    }
+
+    &__selectAll {
+      margin-bottom: 8px;
+    }
+
+    &__subItems {
+      background: $neutral-7;
+      width: 330px;
+      height: 56px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height:18px;
+      padding: 20px 2px;
+      .ant-checkbox {
+        padding: 0px 10px;
+        margin-right: 10px;
+      }
+    }
+    &__labelContainer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__editLink{
+      color: $primary-6;
+      cursor: pointer;
+      margin-left: 180px;
+    }
+    &__search{
+      height: 34px;
+      background-color: $neutral-6;
+      border-color: $neutral-6;
+      padding: 12px 0px;
+      .ant-input {
+        background-color: $neutral-6;
+        height: 11px;
+
+      }
+      .ant-input-prefix svg {
+        color: black;
+        height:18px;
+        width:18px;
+       color: $disabled-text;
+
+    }
+    }
+}
+.ant-input-affix-wrapper.groupDrawer
+{
+    background: $neutral-6;
+    height: 32px;
+
+    input.ant-input {
+      background: $neutral-6;
+      height: 22px;
+      bottom: 5px;
+    }
+    span {
+      color: $title-45;
+      height: 20px;
+    }
+  }
+
+  .list-container {
+    height: calc(100vh - 460px);
+    overflow-y: auto;
+    .ant-divider-horizontal{
+      margin:16px 0
+    }
+  }
+  .button {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+   
+  }
+  .footerButtons{
+    justify-content: center;
+    col{
+      margin-right: 10px;
+    }
+  }
+  .custom-save{
+    margin-left: 10px;
+  }
+  .empty-description{
+    color: $title-45;
+  }
+  .editIcon{
+    margin-right: 5px;
+  }
+
+  .checkBox-group{
+    display: block;
+    margin-top: 20px;
+  }
+  }

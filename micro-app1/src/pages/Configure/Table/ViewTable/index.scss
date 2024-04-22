@@ -1,0 +1,88 @@
+@import '../../../../styles/global-settings.scss';
+@import '../../../../styles/colorVariable';
+
+.viewTable-template {
+    padding: 10px;
+    .wrapper {
+        padding-top: 5px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header {
+        .anticon-arrow-left {
+            margin-right: 8px;
+            color: rgba(0, 0, 0, 0.45);
+            cursor: pointer;
+        }
+        align-items: center;
+        width: 205px;
+        height: 24px;
+    }
+    .name-description {
+        .ant-form {
+            display: flex;
+        }
+        .name {
+            margin-right: 8px;
+            width: 50%;
+        }
+        .description {
+            width: 100%;
+        }
+    }
+    .form {
+        .EditTableCreateTable {
+            &__Wrapper {
+                &__button {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                &__Table {
+                    height: 440px;
+                }
+                &__Footer {
+                    @include flexprob;
+                    background: $neutral-1;
+                    width: 100%;
+                    padding: 12px 24px 16px 24px;
+                    z-index: 1;
+                    gap: 8px;
+                    border-top: 0.5px solid $border;
+                }
+                &__FooterWrapper {
+                    width: 110px;
+                }
+            }
+
+            .deleteicon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .editable-cell {
+                position: relative;
+            }
+
+            .editable-cell-value-wrap {
+                padding: 5px 12px;
+                cursor: pointer;
+            }
+
+            .editable-row:hover .editable-cell-value-wrap {
+                padding: 4px 11px;
+                border: 1px solid #d9d9d9;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.ant-table-thead > tr > th.columnName,
+.ant-table-thead > tr > th.dataType,
+.ant-table-thead > tr > th.uom {
+    padding-left: 25px; // Adjust the padding to move the header to the right
+}

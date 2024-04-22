@@ -1,0 +1,27 @@
+@import '../../styles/global-settings.scss';
+
+.configure {
+    width: 100%;
+    background: white;
+    &__headerWrapper {
+        padding: 20px 5px 20px 24px;
+    }
+    &__tabsWrapper {
+        @include textfontstyle;
+        margin-top: 16px;
+    }
+    @include themify($themes) {
+        background: themed('headerFooterBackground');
+        color: themed('textColor');
+        .ant-tabs-nav {
+            margin-left: 24px;
+        }
+        .ant-tabs-nav {
+            margin: 0px 0px 0px 24px !important;
+        }
+    }
+}
+.customButton.custom-add.users.button-disabled :hover {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.04) !important;
+}

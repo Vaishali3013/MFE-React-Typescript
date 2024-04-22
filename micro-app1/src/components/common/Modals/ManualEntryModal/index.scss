@@ -1,0 +1,94 @@
+@import '../../../../styles/global-settings.scss';
+@import '../../../../styles/colorVariable';
+
+.ant-modal-root .ant-modal-mask {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7.5px);
+}
+.manualEntryConfirmationModal.save {
+    width: 509px !important;
+}
+.manualEntryConfirmationModal.delete {
+    width: 593px !important;
+}
+.manualEntryConfirmationModal {
+    width: 509px !important;
+    .ant-modal-content {
+        padding: 0px !important;
+        .ant-modal-body {
+            @include flexprob;
+            padding: 52px 0px 22px 0px;
+            flex-direction: column;
+            gap: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            span {
+                @include textfontstyle;
+                color: $title-85;
+                text-align: center;
+                width: 355px;
+            }
+        }
+        .ant-modal-close {
+            top: 26px !important;
+        }
+        .ant-modal-footer {
+            @include textfontstyle;
+            text-align: center;
+            margin-top: 0px !important;
+            padding: 24px 0px;
+
+            .ant-btn-primary {
+                padding: 4px 0px;
+                width: 109px;
+            }
+            .ant-btn-default {
+                width: 109px;
+            }
+        }
+    }
+}
+
+.titleContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.titleConfirmationModal {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $title-45;
+}
+
+.titleValueConfirmationModal {
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $title-65;
+}
+
+.textConfirmationModal {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $title-85;
+}
+
+.ant-switch .ant-switch-inner {
+    width: 44px !important;
+}
+
+.ant-switch .ant-switch-loading-icon.anticon {
+    width: auto !important;
+    line-height: 0px !important;
+}

@@ -1,0 +1,20 @@
+@import '../../styles/global-settings.scss';
+
+.nocilDashboard {
+    .card-heading {
+        height: 116px;
+    }
+    .nocilWrapperScrolContent {
+        overflow-y: scroll;
+        height: calc(100vh - 180px);
+    }
+
+    .ant-card .ant-card-body {
+        padding-right: 20px;
+        padding-top: 16px;
+        cursor: pointer;
+    }
+    .nocilWrapper {
+        @include fontTextStyle;
+    }
+}

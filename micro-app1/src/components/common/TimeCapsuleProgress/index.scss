@@ -1,0 +1,77 @@
+@import '../../../styles/mixins';
+@import '../../../styles/fontStyles.scss';
+@import '../../../styles/utilities.helper';
+
+.stepperBar {
+    justify-content: flex-end;
+
+    &__stepCount {
+        @include textfontstyle;
+        color: $title-85;
+        border-right: 1px solid $border;
+    }
+
+    &__stepper {
+        @include textfontstyle;
+        color: $title-45;
+    }
+
+    &__progressWrapper {
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
+
+    &__stepCountValue {
+        @include flexprob;
+        gap: 5px;
+        height: 20px;
+
+        span {
+            @include textfontstyle;
+            color: $title-85;
+        }
+    }
+
+    .stepperProgress {
+        width: 16px; // Adjust the width of each circle
+        height: 16px; // Adjust the height of each circle
+        background-color: $progress-inactive-bg;
+        border-radius: 50%;
+
+        &--completed {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #52c41a;
+            background-color: #52c41a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--active {
+            width: 16px;
+            height: 16px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid $stepper-border;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--activeDot {
+            width: 8px;
+            height: 8px;
+            background-color: $stepper-border;
+            border-radius: 50%;
+        }
+    }
+
+    .stepperBar__line {
+        width: 68px; // Adjust the width of the line
+        height: 2px; // Adjust the height of the line
+        background-color: $progress-inactive-bg; // Set the background color
+    }
+}

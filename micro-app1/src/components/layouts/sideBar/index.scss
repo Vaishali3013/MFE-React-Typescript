@@ -1,0 +1,183 @@
+@import '../../../styles/global-settings.scss';
+
+.switch-module-icon {
+    display: flex;
+    cursor: pointer;
+    color: $primary-2;
+    padding: 16px 4px;
+}
+
+.filter-navigator {
+    @include flexprob;
+    gap: 14px;
+    padding: 15px 11px;
+    height: 48px;
+    cursor: pointer;
+    .anticon svg {
+        width: 16px;
+        height: 16px;
+    }
+    .ant-input-affix-wrapper {
+        color: rgba(0, 0, 0, 0.3);
+        border: none;
+        width: 209px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.ant-menu-light {
+    background-color: #f1f3fc;
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup {
+    ul.ant-menu.ant-menu-sub {
+        .ant-menu-item.ant-menu-item-active:hover {
+            background-color: #f1f3fc !important;
+            svg,
+            a,
+            span {
+                @include textfontstyle;
+                color: black;
+            }
+        }
+
+        .ant-menu-submenu-active.ant-menu-submenu-open,
+        .ant-menu-submenu-title:hover {
+            background-color: #f1f3fc !important;
+            svg,
+            a,
+            span {
+                color: black;
+            }
+        }
+
+        .ant-menu-item.ant-menu-item-selected {
+            background-color: $primary-4 !important;
+            svg,
+            a,
+            span {
+                color: white;
+                stroke: white;
+            }
+        }
+
+        .ant-menu-submenu-title {
+            overflow: visible !important;
+            svg,
+            a,
+            span {
+                color: black;
+            }
+        }
+    }
+}
+
+.ant-menu-title-content {
+    a {
+        color: black;
+    }
+}
+
+.sider-container-collapsed {
+    ul.ant-menu-inline-collapsed {
+        .ant-menu-item-selected {
+            background-color: $primary-4 !important;
+            display: flex;
+            align-items: center;
+            svg,
+            a,
+            span {
+                color: white;
+                stroke: white;
+                stroke-width: 0.8px;
+            }
+        }
+
+        .ant-menu-submenu-selected > .ant-menu-submenu-title {
+            background-color: $primary-4 !important;
+            display: flex;
+            align-items: center;
+            svg,
+            a,
+            span {
+                color: white;
+                stroke: white;
+                stroke-width: 0.8px;
+            }
+        }
+
+        .ant-menu-submenu-open.ant-menu-submenu-active:hover {
+            .ant-menu-submenu-title:hover {
+                background-color: #dde2f9 !important;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .ant-menu-submenu-open.ant-menu-submenu-active
+            .ant-menu-item-selected.ant-tooltip-open:hover {
+            .ant-menu-submenu-title:hover {
+                background-color: $primary-4 !important;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .ant-menu-item-active {
+            background-color: #dde2f9 !important;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.side-menu-tabs-expanded {
+    .ant-menu-vertical {
+        border-inline-end: 0 !important;
+    }
+
+    margin: 16px;
+
+    .ant-menu-submenu {
+        padding-bottom: 0;
+    }
+
+    li.ant-menu-submenu.ant-menu-submenu-vertical.ant-menu-submenu-selected {
+        background-color: $primary-4 !important;
+        svg,
+        a,
+        span {
+            color: white;
+            stroke: white;
+            stroke-width: 0.8px;
+        }
+    }
+
+    .ant-menu-item.ant-menu-item-selected {
+        background-color: $primary-4 !important;
+        svg,
+        a,
+        span {
+            color: white;
+            stroke: white;
+            stroke-width: 0.8px;
+        }
+    }
+
+    .ant-menu-item.ant-menu-item-active,
+    .ant-menu-submenu-open.ant-menu-submenu-active,
+    .ant-menu-submenu-title:hover {
+        background-color: #dde2f9 !important;
+        svg,
+        a,
+        span {
+            color: black;
+        }
+    }
+}
+.collapsed {
+    ul.ant-pagination {
+        left: 20px;
+    }
+}

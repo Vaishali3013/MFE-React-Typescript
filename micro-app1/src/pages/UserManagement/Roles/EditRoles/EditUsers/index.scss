@@ -1,0 +1,92 @@
+@import "../../../../../styles/global-settings.scss";
+
+.EditUserWrapper {
+  display: flex;
+  flex-direction: column;
+  &__topLayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px 0px 24px;
+    a {
+      color: red;
+    }
+  }
+
+  &__search {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: $neutral-6 !important;
+
+    input.ant-input,
+    .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      padding: 4px;
+      width: 300px;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px;
+      margin-left: 4px;
+    }
+    span {
+      color: $title-45;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px;
+    }
+    .ant-select-arrow {
+      display: none;
+    }
+  }
+
+  .ant-divider-horizontal.ant-divider-with-text {
+    margin: 10px 0px 2px 0px;
+  }
+
+  &__topLayerAssigned {
+    width: 100%;
+    padding: 0px 24px;
+    a {
+      color: red;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__topLayerUnassigned {
+    width: 100%;
+    padding: 0px 24px;
+    a {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    height: calc(100vh - 157px);
+    overflow-y: scroll;
+    padding: 12px 24px 10px;
+  }
+
+  &__assignedTable {
+    width: 100%;
+    max-height: calc(100vh - 475px);
+    overflow-y: scroll;
+    padding: 12px 20px 10px;
+  }
+
+  &__middleContent {
+    padding-bottom: 10px;
+  }
+}
+.userTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

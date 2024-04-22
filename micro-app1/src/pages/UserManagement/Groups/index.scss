@@ -1,0 +1,37 @@
+.groupsWrapper__noData {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    .EmptyDataComponent__buttons__customButton {
+        padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+        width: 143px;
+        margin: 0 auto;
+    }
+}
+
+.groupsWrapper {
+    .download-create-header {
+        display: flex;
+        .download-button {
+            margin-right: 8px;
+        }
+    }
+    padding: 12px;
+    .ant-card-body {
+        height: 100%;
+        padding: 12px 24px !important;
+    }
+    .ant-card {
+        height: 75vh;
+        margin: auto;
+    }
+}
+.usersWrapper-head {
+    justify-content: space-between;
+}
+.export-option {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,133 @@
+@import "../../../../styles/colorVariable";
+@import "../../../../styles/global-settings.scss";
+.assignedAttribute {
+  &__header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__assignText {
+    margin-left: 8px;
+  }
+
+  &__searchBox {
+    margin-left: 8px;
+  }
+  &__search {
+    input.ant-input {
+      background: $gray-3;
+      height: 16px;
+      margin-top: -4px;
+    }
+    width: 209px !important;
+    height: 32px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: $neutral-6 !important;
+    .ant-select-selector,
+    .ant-input-outlined:focus,
+    .ant-input-outlined:hover {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px !important;
+      margin-left: 4px !important;
+    }
+    span {
+      color: $title-45 !important;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+    &:hover input.ant-input,
+    &:hover .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+
+    /* Focus effect */
+    &:focus-within input.ant-input,
+    &:focus-within .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+  }
+  &__backIcon {
+    color: $gray-8;
+  }
+  &__assignMoreBtn {
+    width: 115px;
+    float: inline-end;
+    margin-right: 12px;
+  }
+  span.ant-badge {
+    margin-left: 10px;
+  }
+  .ant-badge-count {
+    background-color: $primary-8 !important;
+    color: $primary-9 !important;
+  }
+  .tablePaginated {
+    .ant-table-body {
+      height: calc(100vh - 462px);
+    }
+  }
+  .tableNotPaginated {
+    .ant-table-body {
+      height: calc(100vh - 402px);
+    }
+  }
+  .implementation_loader {
+    height: 300px;
+    width: 100%;
+    @include flexprob;
+  }
+  .attribute-name {
+    display: flex;
+  }
+  .validation-green {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .attributeTableWrapper__nameData span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include flexprob;
+    > svg {
+      margin-left: 10px;
+    }
+  }
+  .customPaginationStatic {
+    position: relative;
+    bottom: 6px;
+  }
+  .column__name {
+    padding: 11px 16px !important;
+  }
+}
+
+.assignedAttributeTable {
+  margin-top: 8px;
+  .ant-table.ant-table-fixed-header {
+    margin-left: 8px;
+  }
+}
+
+.assignedAttribute__pagination {
+  background: $neutral-1;
+  box-shadow: 0px -11px 24px $box-shadow-neutral;
+  width: 100%;
+  padding: 12px 24px 16px 24px;
+  z-index: 1;
+  text-align: end;
+  position: relative;
+}

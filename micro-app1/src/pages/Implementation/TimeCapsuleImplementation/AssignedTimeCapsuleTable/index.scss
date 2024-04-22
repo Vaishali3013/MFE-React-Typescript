@@ -1,0 +1,286 @@
+@import "../../../../styles/global-settings.scss";
+.assignedTimeCapsule {
+  .customPaginationStatic {
+    position: relative;
+  }
+  .ant-badge-count {
+    background-color: $primary-8 !important;
+    color: $primary-9 !important;
+  }
+  &__header {
+    justify-content: space-between;
+    margin-left: 8px;
+  }
+  &__assignText {
+    margin-left: 8px;
+  }
+  &__searchBox {
+    margin-left: 8px;
+  }
+  &__search {
+    input.ant-input {
+      background: $gray-3;
+      height: 16px;
+      margin-top: -4px;
+    }
+    width: 209px !important;
+    height: 32px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: $neutral-6 !important;
+    .ant-select-selector,
+    .ant-input-outlined:focus,
+    .ant-input-outlined:hover {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px !important;
+      margin-left: 4px !important;
+    }
+    span {
+      color: $title-45 !important;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+    &:hover input.ant-input,
+    &:hover .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+
+    /* Focus effect */
+    &:focus-within input.ant-input,
+    &:focus-within .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+  }
+  &__backIcon {
+    color: $gray-8;
+  }
+  &__assignMoreBtn {
+    width: 115px;
+    float: inline-end;
+    margin-right: 12px;
+  }
+}
+
+.assignedTimeCapsuleTable {
+  margin-top: 8px;
+  margin-left: 4px;
+}
+
+// css for table
+.timeCapsuleTableWrapper {
+  padding-top: 12px;
+  thead.ant-table-thead {
+    @include textfontstyle;
+    font-weight: 500;
+    font-size: 14px;
+    color: $title-85;
+  }
+  tr.ant-table-row {
+    @include textfontstyle;
+    font-weight: 400;
+    font-size: 14px;
+    color: $title-85;
+  }
+  .column-title,
+  &__columnTitle {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      justify-content: center;
+      align-items: center;
+
+      .sortArrows {
+        @include flexprob;
+        flex-direction: column;
+        gap: 2px;
+        cursor: pointer;
+      }
+    }
+    .sortArrows,
+    span {
+      @include flexprob;
+      flex-direction: column;
+      gap: 2px;
+      cursor: pointer;
+    }
+  }
+  &__nameData {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 190px;
+    .viewName {
+      margin-left: 0px;
+      display: flex;
+    }
+    .otp-btn {
+      background-color: $red-3;
+      border-radius: 20px;
+      color: #fff;
+      margin-left: 10px;
+      padding: 0;
+      width: 50px;
+      height: 23px;
+      border: 0;
+      span {
+        line-height: 24px;
+      }
+    }
+    span {
+      @include textfontstyle;
+    }
+    span.ant-avatar.ant-avatar-circle.mr-10 {
+      background-color: $volcano-4;
+      color: $neutral-1;
+      margin-right: 10px;
+    }
+    .name {
+      color: $primary-4;
+    }
+  }
+  &__status {
+    @include flexprob;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  &__roles {
+    width: 80px;
+  }
+  &__createdBy {
+    width: 120px;
+  }
+
+  &__subItems {
+    // width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.timeCapsule__statusFilter {
+  display: flex;
+  flex-direction: column;
+  .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    border-color: $primary-6;
+    background-color: $neutral-1;
+  }
+  .ant-radio-wrapper .ant-radio-inner::after {
+    background-color: $primary-6;
+  }
+}
+
+// more content
+.moreContent__items {
+  list-style: none;
+  padding-bottom: 12px;
+}
+.moreContent__items:last-child {
+  padding-bottom: 0px !important;
+}
+
+.moreContent__option {
+  font-size: 14px;
+}
+
+.moreContent__option:hover {
+  cursor: pointer;
+}
+
+.moreContentIcon {
+  margin-right: 8.6px;
+  vertical-align: middle;
+}
+
+// table column
+
+.column__name {
+  width: 190px;
+  padding: 11px 0 !important;
+}
+.column__description {
+  width: 285px;
+  padding: 11px 16px !important;
+}
+.column__attributes {
+  width: 259px;
+  padding: 11px 16px !important;
+}
+
+.custom-popover-content {
+  width: 204px;
+}
+.moreContent__option.disable {
+  pointer-events: none;
+}
+
+.timeCapsuleTable__subItems {
+  height: 32px;
+  // width: 32px;
+  border-radius: 50%;
+  background-color: $neutral-4;
+  text-align: center;
+  color: $gray-6;
+  font-size: 14px;
+  padding: 5px;
+}
+.tablePaginated {
+  .ant-table-body {
+    height: calc(100vh - 462px);
+  }
+}
+.tableNotPaginated {
+  .ant-table-body {
+    height: calc(100vh - 402px);
+  }
+}
+.timeCapsuleMultiplePopover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.timeCapsuleMultiplePopover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}
+.timeCapsuleLoader {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sortArrows {
+  margin-right: 8px;
+}
+
+.attributesToolTip .ant-tooltip-inner {
+  height: 100px;
+  width: 300px;
+  overflow-y: scroll;
+}

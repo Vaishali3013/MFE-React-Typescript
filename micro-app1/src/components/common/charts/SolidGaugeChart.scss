@@ -1,0 +1,18 @@
+@import '../../../styles/global-settings.scss';
+
+.custom-data-label {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-data-label span {
+    font-size: 12px;
+    color: $title-85;
+  }
+  
+  .custom-data-label small {
+    font-size: 12px;
+    color: $title-85;
+  }

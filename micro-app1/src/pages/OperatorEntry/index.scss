@@ -1,0 +1,25 @@
+@import '../../styles/global-settings.scss';
+
+.operatorEntry {
+    .operatorEntryWrapperScrolContent {
+        overflow-y: scroll;
+        height: calc(100vh - 165px);
+    }
+    .operatorEntryWrapper {
+        height: calc(100vh - 196px);
+        @include fontTextStyle;
+
+        &__cardContent {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__cardBody {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+        }
+    }
+}

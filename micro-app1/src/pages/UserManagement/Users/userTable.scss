@@ -1,0 +1,223 @@
+@import '../../../styles/global-settings.scss';
+
+// css for table
+.userTableWrapper {
+    thead.ant-table-thead {
+        @include textfontstyle;
+        font-weight: 500;
+        font-size: 14px;
+        color: $title-85;
+    }
+    tr.ant-table-row {
+        @include textfontstyle;
+        font-weight: 400;
+        font-size: 14px;
+        color: $title-85;
+    }
+    .column-title,
+    &__columnTitle {
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            display: grid;
+            grid-template-columns: 10% 1fr 10%;
+            justify-content: center;
+            align-items: center;
+
+            .sortArrows {
+                @include flexprob;
+                flex-direction: column;
+                gap: 2px;
+                cursor: pointer;
+            }
+        }
+        .sortArrows,
+        span {
+            @include flexprob;
+            flex-direction: column;
+            gap: 2px;
+            cursor: pointer;
+        }
+    }
+    &__nameData {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        width: 190px;
+        .viewName {
+            margin-left: 0px;
+            display: flex;
+        }
+        .otp-btn {
+            background-color: $red-3;
+            border-radius: 20px;
+            color: #fff;
+            margin-left: 10px;
+            padding: 0;
+            width: 50px;
+            height: 23px;
+            border: 0;
+            span {
+                line-height: 24px;
+            }
+        }
+        span {
+            @include textfontstyle;
+        }
+        span.ant-avatar.ant-avatar-circle.mr-10 {
+            background-color: $volcano-4;
+            color: $neutral-1;
+            margin-right: 10px;
+        }
+        .name {
+            color: $primary-4;
+        }
+    }
+    &__status {
+        @include flexprob;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    &__roles {
+        width: 80px;
+    }
+    &__createdBy {
+        width: 120px;
+    }
+}
+.user__statusFilter {
+    display: flex;
+    flex-direction: column;
+    .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+        border-color: $primary-6;
+        background-color: $neutral-1;
+    }
+    .ant-radio-wrapper .ant-radio-inner::after {
+        background-color: $primary-6;
+    }
+}
+
+// more content
+.moreContent__items {
+    list-style: none;
+    padding-bottom: 12px;
+}
+.moreContent__items:last-child {
+    padding-bottom: 0px !important;
+}
+
+.moreContent__option {
+    font-size: 14px;
+}
+
+.moreContent__option:hover {
+    cursor: pointer;
+}
+
+.moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+}
+
+// for modal
+.addUserManually__imageUpload {
+    @include flexprob;
+    flex-direction: column;
+    color: $disabled-text;
+    gap: 8px;
+    margin: 20px 0px;
+}
+.addUserManually__content__wrapper {
+    height: 370px;
+    overflow-y: scroll;
+    border-top: 0.5px solid $border;
+}
+.addUserManually__wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.view__loader {
+    height: 307px;
+    @include flexprob;
+}
+// otp screen
+
+.otp-popover {
+    .otpinput-send {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .customButton.custom-send {
+        width: 30%;
+        margin-left: 10px;
+    }
+    .otp-copy {
+        background: #f2f2f2;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        @include flexprob;
+        position: relative;
+    }
+
+    .otp-copyicon.text-right {
+        position: absolute;
+        top: 42%;
+        right: 10%;
+        cursor: pointer;
+    }
+
+    span.mb-10 {
+        margin-bottom: 10px;
+        display: block;
+    }
+    .popover-width {
+        width: 50%;
+    }
+    span.text-width {
+        width: 70%;
+        display: block;
+    }
+}
+
+// table column
+
+.column__name {
+    width: 236px;
+    padding: 11px 0 !important;
+}
+.column__roles {
+    width: 163px;
+    padding: 11px 16px !important;
+}
+.column__email {
+    width: 193px;
+    padding: 11px 16px !important;
+}
+.column__status {
+    width: 119px;
+    padding: 11px 16px !important;
+}
+.column__addedOn {
+    width: 184px;
+    padding: 11px 16px !important;
+}
+.column__addedBy {
+    width: 158px;
+    padding: 11px 16px !important;
+}
+
+.edit-usermodal .ant-modal {
+    width: 720px !important;
+}
+
+.custom-popover-content {
+    width: 204px;
+}
+.moreContent__option.disable {
+    pointer-events: none;
+}

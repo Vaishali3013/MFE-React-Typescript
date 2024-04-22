@@ -1,0 +1,39 @@
+.tableFooter {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+}
+.tableFooterButtons {
+    justify-content: center;
+}
+.disableShifts {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #ff4d4f;
+    border-radius: 50%;
+}
+.footerCancelButton {
+    padding-right: 4px;
+}
+.footerSaveButton {
+    padding-left: 4px;
+}
+.activeShifts {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #52c41a;
+    border-radius: 50%;
+}
+
+.calendar-error .ant-picker-input > input {
+    color: #ff4d4f !important;
+}
+
+.highlighted-hours {
+    color: #2f54eb;
+}
+.actionBoxAddButton {
+    cursor: 'pointer';
+    margin-top: 5px;
+}

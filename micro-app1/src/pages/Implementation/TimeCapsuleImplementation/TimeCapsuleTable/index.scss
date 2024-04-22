@@ -1,0 +1,25 @@
+.tablePaginated {
+    .ant-table-body {
+        height: calc(100vh - 529px);
+    }
+}
+.tableNotPaginated {
+    .ant-table-body {
+        height: calc(100vh - 454px);
+    }
+}
+.timeCapsuleLoader {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sortArrows {
+    margin-right: 8px;
+}
+.attributesToolTip .ant-tooltip-inner {
+    height: 100px;
+    width: 300px;
+    overflow-y: scroll;
+}

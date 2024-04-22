@@ -1,0 +1,51 @@
+@import '../../../styles/global-settings.scss';
+
+.countAnalyticsWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: flex-end;
+    width: 330px;
+    float: right;
+    .countAnalytics {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        .countAnalytics__deactiveUsers {
+            span {
+                @include textfontstyle;
+                color: $title-45;
+            }
+        }
+        &__activeUsers {
+            width: 160px;
+            @extend .countAnalytics__deactiveUsers;
+        }
+        &__activeCustomUsers {
+            min-width: 120px;
+            @extend .countAnalytics__deactiveUsers;
+        }
+        .countAnalytics__countInfo {
+            @include flexprob;
+            gap: 5px;
+            span {
+                @include textfontstyle;
+                color: $title-85;
+            }
+        }
+    }
+    :last-child {
+        border-right: none;
+    }
+    span.calendarCountAnalytics {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+.calendarCountAnalytics.countAnalytics__countInfo {
+    justify-content: flex-end !important;
+    padding-right: 10px;
+}
+.implementationCountAnalytics.countAnalytics__countInfo {
+    justify-content: flex-end !important;
+    padding-right: 10px;
+}

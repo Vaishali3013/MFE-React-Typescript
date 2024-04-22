@@ -1,0 +1,123 @@
+@import '../../../../styles/global-settings.scss';
+.profileComponent {
+  padding: 12px;
+  .ant-card-body {
+    padding: 0;
+    .profileContainer {
+      &__heading {
+        padding: 24px;
+        border-bottom: 1px solid $divider;
+      }
+      .contentCard {
+        &__heading {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: $title-85;
+
+          font-size: 18px;
+        }
+      }
+      &__content {
+        min-height: 802px;
+        &__child {
+          max-width: 936px;
+          margin: 0 auto;
+        }
+        &__image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 24px 0px;
+        }
+
+        &__items {
+          min-height: 255px;
+          .ant-card {
+            height: 100%;
+          }
+        }
+        &__items {
+          .contentCard {
+            padding: 24px;
+            border: 1px solid &neutral-5;
+            border-radius: 12px;
+            &__header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 32px;
+              &__title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: $title-85;
+              }
+              div:nth-child(1) {
+                width: 58px;
+              }
+            }
+            &__fields {
+              display: flex;
+              height: 135px;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 20px;
+              width: 100%;
+              margin-top: 7px;
+              &__details {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 24px;
+                .ant-form-item {
+                  width: 100%;
+                  max-width: 280px;
+                  .ant-row {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .ant-col:nth-child(1) {
+                      label {
+                        span {
+                          font-family: 'Inter';
+                          font-style: normal;
+                          font-weight: 400;
+                          font-size: 14px;
+                          line-height: 22px;
+                          color: $title-85;
+                        }
+                      }
+                    }
+                    .ant-col:nth-child(2) {
+                      width: 100%;
+                      span {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        display: flex;
+                        align-items: center;
+                        color: rgba(0, 0, 0, 0.45);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &__items:nth-child(2) {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}

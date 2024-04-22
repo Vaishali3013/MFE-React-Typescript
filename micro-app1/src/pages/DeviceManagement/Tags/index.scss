@@ -1,0 +1,424 @@
+@import "../../../styles/global-settings.scss";
+
+// css for table
+.tagTableWrapper {
+  thead.ant-table-thead {
+    @include textfontstyle;
+    font-weight: 500;
+    font-size: 14px;
+    color: $title-85;
+  }
+  tr.ant-table-row {
+    @include textfontstyle;
+    font-weight: 400;
+    font-size: 14px;
+    color: $title-85;
+  }
+  .column-title,
+  &__columnTitle {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      justify-content: center;
+      align-items: center;
+      .sortArrows {
+        @include flexprob;
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+    .sortArrows {
+      @include flexprob;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+  &__nameData {
+    &__info {
+      cursor: pointer;
+      span {
+        white-space: break-spaces;
+      }
+    }
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    span {
+      @include textfontstyle;
+      white-space: break-spaces;
+    }
+    span.ant-avatar.ant-avatar-circle.mr-10 {
+      color: $neutral-1;
+      margin-right: 10px;
+    }
+  }
+  &__popover {
+    width: "162px";
+  }
+  &__status {
+    @include flexprob;
+    justify-content: flex-start;
+    gap: 8px;
+    color: $primary-4;
+  }
+  &__connectedDevices {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    flex-flow: wrap;
+    .activeButton {
+      color: $polar-green-6;
+      background-color: $polar-green-1;
+      border: 1px solid $polar-green-3;
+      border-radius: 2px;
+      width: 84px;
+      height: 24px;
+      font-size: 12px;
+      text-align: left;
+      padding: 2px 4px;
+    }
+    .inactiveButton {
+      color: $red-3;
+      background-color: $red-1;
+      border: 1px solid $red-2;
+      border-radius: 2px;
+      width: 84px;
+      height: 24px;
+      font-size: 12px;
+      text-align: left;
+      padding: 2px 4px;
+    }
+  }
+}
+li.moreContent_items {
+  list-style: none;
+  padding-bottom: 12px;
+  .moreContent__option {
+    font-size: 14px;
+  }
+  .moreContent__option:hover {
+    cursor: pointer;
+  }
+  .moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+  }
+}
+
+.tagWrapper,
+.ant-input-affix-wrapper {
+  gap: 10px;
+  padding: 12px;
+  .ant-switch .ant-switch-inner {
+    width: 28px !important;
+  }
+  &__search {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    input.ant-input,
+    .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      padding: 4px;
+      width: 300px;
+      height: 40px;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px;
+      margin-left: 4px;
+    }
+    span {
+      color: $title-45;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px;
+    }
+    .ant-select-arrow {
+      display: none;
+    }
+  }
+  &__tableEmpty {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    .EmptyDataComponent__buttons__customButton {
+      padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+      width: 143px;
+      margin: 0 auto;
+    }
+    .bulk-importbtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__drawer {
+    position: absolute;
+    width: 720px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    background: #ffffff;
+    box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 0px 8px;
+  }
+  .ant-card {
+    height: calc(100vh - 218px);
+    margin: auto;
+  }
+  .ant-card-body {
+    height: 100%;
+  }
+}
+.tagWrapper__tagList {
+  padding-top: 12px;
+  overflow-y: scroll;
+}
+.tagWrapper__header {
+  display: grid;
+  grid-template-columns: 1fr 133px 124px;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.addTagDrawer {
+  position: absolute;
+  width: 720px;
+  height: 689px;
+  right: 0px;
+  bottom: 0px;
+  background: $neutral-1;
+  box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0px 0px 8px;
+  label.ant-form-item-required {
+    width: 100%;
+  }
+  &__formDiv {
+    height: calc(100vh - 340px);
+    overflow: scroll;
+  }
+  &__formItem {
+    line-height: 10px;
+    margin-bottom: 4px;
+  }
+  &__divider {
+    margin: 8px 0;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+  }
+  &__icon {
+    color: $title-45;
+    float: right;
+  }
+  &__headerRow {
+    align-items: center;
+  }
+  &__switch {
+    color: $title-45;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    gap: 6px;
+  }
+  &__heading {
+    span {
+      @include textfontstyle;
+      color: $title-85;
+    }
+  }
+  &__label {
+    @include textfontstyle;
+    color: $title-85;
+    line-height: 22px;
+    span {
+      color: $red-3;
+    }
+  }
+  &__formSectionLeft {
+    padding: 16px 12px 16px 0px;
+  }
+
+  &__formSectionRight {
+    padding: 16px 0px 16px 12px;
+  }
+  &__input {
+    border-radius: 2px;
+    margin-top: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__select {
+    border-radius: 2px;
+    margin-top: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .ant-select-selector {
+      border-radius: 2px;
+      margin-top: 4px;
+    }
+  }
+  &__button {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+  }
+  &__footerButtons {
+    justify-content: center;
+    col {
+      margin-right: 10px;
+    }
+  }
+  &__saveButton {
+    padding-left: 4px;
+  }
+  &__cancelButton {
+    padding-right: 4px;
+  }
+  .ant-select.ant-select-in-form-item {
+    width: 100% !important;
+  }
+
+  .ant-tabs-nav {
+    margin-left: 0;
+  }
+  .ant-space {
+    display: grid;
+    grid-template-columns: 1fr 230px 20px;
+    align-items: center;
+  }
+  &__addNewLabel {
+    width: 100% !important;
+  }
+}
+
+.viewTagDrawer {
+  position: absolute;
+  width: 720px;
+  height: 689px;
+  right: 0px;
+  bottom: 0px;
+  background: $neutral-1;
+  box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0px 0px 8px;
+  &__divider {
+    margin: 8px 0;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+  }
+  &__icon {
+    color: $title-45;
+    float: right;
+  }
+  &__heading {
+    span {
+      @include textfontstyle;
+      color: $title-85;
+    }
+  }
+  &__name {
+    @include textfontstyle;
+    color: $title-85;
+  }
+  &__subName {
+    @include textfontstyle;
+    color: $title-45;
+    word-wrap: break-word;
+  }
+  &__status {
+    display: flex;
+    color: $title-85;
+    float: right;
+    padding-right: 4px;
+    align-items: center;
+    span {
+      padding-left: 4px;
+    }
+  }
+  &__label {
+    @include textfontstyle;
+    color: $title-85;
+    line-height: 22px;
+    span {
+      color: $red-3;
+    }
+  }
+  &__formSectionLeft {
+    padding: 12px 12px 12px 0px;
+  }
+
+  &__formSectionRight {
+    padding: 12px 0px 12px 12px;
+  }
+  &__input {
+    border-radius: 2px;
+    margin-top: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .ant-tabs-nav {
+    margin-left: 0;
+  }
+  .ant-space {
+    display: grid;
+    grid-template-columns: 1fr 230px 20px;
+    align-items: center;
+  }
+}
+
+.view__loader {
+  width: 100vw;
+}
+// NOTE- We have used negative values here because, we have to adjust the position of popover with respect to 3 dots and this is the only way possible.
+.popover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.popover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}
+
+.tagsMultiplePopover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.tagsMultiplePopover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}

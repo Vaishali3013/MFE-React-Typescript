@@ -1,0 +1,66 @@
+@import '../../../../styles/global-settings.scss';
+
+.kpiFormWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__content__wrapper {
+        width: 100% !important;
+    }
+
+    &__form {
+        width: 100% !important;
+        .NameInputBox {
+            .ant-form-item-control-input {
+                width: 80% !important;
+            }
+        }
+
+        .ant-select.ant-select-in-form-item {
+            width: 80% !important;
+        }
+        .DescriptionBox {
+            .ant-form-item-control-input {
+                width: 90% !important;
+            }
+        }
+
+        .ant-select-dropdown {
+            width: 237px !important;
+        }
+    }
+    .formItem__uomLabel {
+        label.ant-form-item-required {
+            width: 100%;
+        }
+    }
+
+    &__imageUpload {
+        @include flexprob;
+        flex-direction: column;
+        color: $disabled-text;
+        gap: 8px;
+        margin: 20px 0px;
+    }
+    &__wrapper {
+        width: 70% !important;
+        margin: auto;
+        padding: 20px 0px 10px 0px;
+    }
+}
+
+.labelRowForAdd {
+    align-items: center;
+    width: 80% !important;
+    line-height: 4px;
+}
+.addItemsButton {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+span.ant-select-tree-title {
+    color: black;
+}

@@ -1,0 +1,118 @@
+@import "../../../styles/global-settings.scss";
+
+.attributeWrapper,
+.ant-input-affix-wrapper {
+  gap: 10px;
+  padding: 12px;
+  .ant-card {
+    .ant-card-body {
+      padding: 12px 24px 24px 24px;
+    }
+  }
+
+  &__noData {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 120px;
+    .EmptyDataComponent__buttons__customButton {
+      padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+      width: 143px;
+      margin: 0 auto;
+    }
+  }
+
+  &__attributeListPagination {
+    padding-top: 12px;
+  }
+  &__attributeList {
+    padding-top: 12px;
+    height: calc(100vh - 305px);
+    overflow-y: scroll;
+  }
+
+  .ant-card .ant-card-body {
+    padding: 12px 24px;
+  }
+
+  &__rowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+
+  &__button {
+    width: 151px;
+    height: 32px;
+  }
+
+  &__search {
+    width: 300px !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: $neutral-6 !important;
+    .ant-select-selector,
+    .ant-input-outlined:focus,
+    .ant-input-outlined:hover {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px !important;
+      margin-left: 4px !important;
+    }
+    span {
+      color: $title-45 !important;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+    &:hover input.ant-input,
+    &:hover .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+
+    /* Focus effect */
+    &:focus-within input.ant-input,
+    &:focus-within .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    input.ant-input {
+      background: $gray-3;
+      height: 16px;
+    }
+  }
+  &__rolesListPagination {
+    padding-top: 12px;
+  }
+  &__rolesList {
+    padding-top: 12px;
+    height: calc(100vh - 305px);
+    overflow-y: scroll;
+  }
+  .ant-card {
+    height: 75vh;
+    margin: auto;
+  }
+  .ant-card-body {
+    height: 100%;
+    padding: 12px 24px !important;
+  }
+  .ant-table-body {
+    overflow-x: hidden !important;
+  }
+}

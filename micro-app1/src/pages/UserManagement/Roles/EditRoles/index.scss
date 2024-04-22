@@ -1,0 +1,261 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.editRolesWrapper {
+    gap: 10px;
+    padding: 12px;
+    &__headerWrapper {
+        padding: 10px 10px 10px 15px;
+        border-bottom: 0.5px solid $border;
+    }
+    .ant-card .ant-card-body {
+        padding: 0px;
+    }
+
+    .ant-collapse > .ant-collapse-item {
+        margin: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+    }
+
+    .ant-collapse {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        list-style: none;
+        background-color: white !important;
+        border: 0px;
+        border-bottom: 0;
+        border-radius: 0px;
+    }
+
+    &__rolesList {
+        padding-top: 12px;
+    }
+
+    &__createRoleContent2 {
+        padding: 20px;
+    }
+
+    &__heading {
+        display: flex;
+    }
+
+    &__backIcon {
+        width: 30px;
+        height: 32px;
+        padding: 8px 0 0 8px;
+    }
+
+    &__editRowHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px 10px 20px;
+        border-bottom: 0.5px solid $border;
+    }
+
+    &__editButton {
+        width: 113px;
+        height: 32px;
+    }
+
+    &__addButton {
+        width: 123px;
+        height: 32px;
+        float: right;
+        padding-right: 10px;
+    }
+
+    &__avatarGroup {
+        cursor: pointer;
+    }
+
+    .ant-avatar-group > *:not(:first-child) {
+        background-color: $progress-border;
+    }
+
+    &__search {
+        width: 300px;
+        height: 40px;
+        background: $gray-3;
+        border: none;
+        border-radius: 8px;
+        input.ant-input {
+            background: $gray-3;
+        }
+        span {
+            color: $title-45;
+        }
+    }
+    &__createRolesContent {
+        display: flex;
+        width: 100%;
+        min-height: calc(100vh - 391px);
+    }
+    &__createRolesContentDisabled {
+        display: flex;
+        width: 100%;
+        min-height: calc(100vh - 344px);
+    }
+    &__createRolesDropdownContent {
+        width: 30%;
+        border-right: 0.5px solid $border;
+        padding: 10px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+    }
+    &__createRolesTableContent {
+        width: 70%;
+        padding: 10px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
+    &__createRolesTableContentDisabled {
+        opacity: 40%;
+        width: 70%;
+        padding: 10px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
+    &__createRolesDropdownCollapse {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: scroll;
+        height: 430px;
+    }
+    &__editButtonGroup {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__buttonGroupIcon {
+        color: $primary-4;
+        size: 12px;
+    }
+    &__createRolesTableHeader {
+        color: $title-45;
+        font-weight: bold;
+        display: flex;
+    }
+    &__createRolesSwitch {
+        width: 28px;
+    }
+    &__createRolesTableContentRow {
+        width: 100%;
+    }
+    &__createRolesTypographySwitch {
+        width: 50%;
+        text-align: center;
+    }
+    &__createRolesTypography {
+        width: 100%;
+        text-align: left;
+    }
+    &__createRolesSwitch {
+        width: 50%;
+        align-items: center;
+    }
+    &__createRoleFooter {
+        @include flexprob;
+        background: $neutral-1;
+        width: 100%;
+        padding: 12px 24px 16px 24px;
+        z-index: 1;
+        gap: 8px;
+        border-top: 0.5px solid $border;
+    }
+    &__footerButtonWrapper {
+        width: 110px;
+    }
+    &__createRoleList {
+        background-color: $neutral-7;
+        padding: 0px 12px;
+        .ant-list-item {
+            padding: 12px 0px;
+        }
+    }
+    &__createRolesTableContentRowHeader {
+        padding: 0px 12px;
+    }
+    &__createRoleContent3 {
+        @include flexprob;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    &__createRoleInnerContent {
+        display: flex;
+        width: 60%;
+        gap: 20px;
+    }
+    &__createRoleInnerContentText {
+        width: 70%;
+        text-align: end;
+    }
+    &__scrollContent {
+        height: calc(100vh - 332px);
+        overflow-y: scroll;
+    }
+    &__scrollContentDisabled {
+        height: calc(100vh - 285px);
+        overflow-y: scroll;
+    }
+    &__headerRight {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.editRolesWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 133px 124px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.statusWrapper__status {
+    @include flexprob;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.editDrawer__wrapper {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ant-drawer-title {
+        margin: 0;
+    }
+
+    .ant-drawer-body {
+        padding: 0px;
+    }
+
+    .ant-drawer-header {
+        padding: 16px 24px 0px;
+        border-bottom: 0px;
+    }
+
+    .ant-drawer-close {
+        order: 2;
+        margin-left: auto;
+    }
+}

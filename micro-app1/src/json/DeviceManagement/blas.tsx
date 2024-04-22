@@ -1,0 +1,530 @@
+import { ReactComponent as CSVIcon } from 'assets/icons/csvIcon.svg';
+import { ReactComponent as ExcelIcon } from 'assets/icons/excelIcon.svg';
+
+export const blasTableData = [
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    blaName: 'Bla Name 2',
+    uuid: '732836774',
+    connectedDevices: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    blaName: 'Bla Name 1',
+    uuid: '743364787',
+    connectedDevices: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+];
+
+export const blasOptionsData = [
+  {
+    value: 'csv-upload',
+    icon: <CSVIcon />,
+    label: 'Upload as CSV',
+  },
+  {
+    value: 'Upload as Excel',
+    icon: <ExcelIcon />,
+    label: 'Upload as Excel',
+  },
+];
+
+export const editBlaTableData = [
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    comInterface: 'Serial Devicer',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    deviceName: 'Device Name 2',
+    comInterface: 'OPC',
+    mappedTags: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    comInterface: 'Ethernet',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    deviceName: 'Device Name 2',
+    comInterface: 'OPC',
+    mappedTags: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    comInterface: 'MODBUS',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    deviceName: 'Device Name 2',
+    comInterface: 'Wireless',
+    mappedTags: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    comInterface: 'Serial Devicer',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    lastModified: '2021-02-05 08:28:36',
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+];
+
+export const editBlaOptionsData = [
+  {
+    value: 'csv-upload',
+    icon: <CSVIcon />,
+    label: 'Upload as CSV',
+  },
+  {
+    value: 'Upload as Excel',
+    icon: <ExcelIcon />,
+    label: 'Upload as Excel',
+  },
+];
+
+export const deviceTableData = [
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    description: 'Lorem ipsum',
+    type: 'Ethernet',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    deviceName: 'Device Name 2',
+    description: 'Lorem ipsum',
+    type: 'OPC',
+    mappedTags: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    description: 'Lorem ipsum',
+    type: 'MODBUS',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+  {
+    key: '3',
+    deviceName: 'Device Name 2',
+    description: 'Lorem ipsum',
+    type: 'Wireless',
+    mappedTags: {
+      active: ['jkdf', 'jksbvd', 'bhsje'],
+      inactive: [
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+        'jkdf',
+        'jksbvd',
+        'bhsje',
+      ],
+    },
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Inactive',
+  },
+  {
+    key: '1',
+    deviceName: 'Device Name 1',
+    description: 'Lorem ipsum',
+    type: 'Serial Devicer',
+    mappedTags: {
+      inactive: ['jkdf', 'jksbvd'],
+    },
+    createdOn: '2021-02-05 08:28:36',
+    status: 'Active',
+  },
+];
+
+export const deviceTableOptionsData = [
+  {
+    value: 'csv-upload',
+    icon: <CSVIcon />,
+    label: 'Upload as CSV',
+  },
+  {
+    value: 'Upload as Excel',
+    icon: <ExcelIcon />,
+    label: 'Upload as Excel',
+  },
+];
+
+
+export const tagTableData = [
+  {
+    key: '1',
+    tagName: 'Tag Name 1',
+    tagId: '7846547828328',
+    dataType: 'Ethernet',
+    address: '102.202.12.43',
+    value: '7846547828328',
+    status: 'Inactive',
+  },
+  {
+    key: '3',
+    tagName: 'Tag Name 2',
+    tagId: '7846547828328',
+    dataType: 'OPC',
+    address: '102.202.12.43',
+    value: '7846547828328',
+    status: 'Active',
+  },
+  {
+    key: '1',
+    tagName: 'Tag Name 1',
+    tagId: '7846547828328',
+    dataType: 'MODBUS',
+    address: '102.202.12.43',
+    value: '7846547828328',
+    status: 'Inactive',
+  },
+  {
+    key: '3',
+    tagName: 'Tag Name 2',
+    tagId: '7846547828328',
+    dataType: 'Wireless',
+    address: '102.202.12.43',
+    value: '7846547828328',
+    status: 'Active',
+  },
+  {
+    key: '1',
+    tagName: 'Tag Name 1',
+    tagId: '7846547828328',
+    dataType: 'Serial Tagr',
+    address: '102.202.12.43',
+    value: '7846547828328',
+    status: 'Inactive',
+  },
+];
+
+export const tagTableOptionsData = [
+  {
+    value: 'csv-upload',
+    icon: <CSVIcon />,
+    label: 'Upload as CSV',
+  },
+  {
+    value: 'Upload as Excel',
+    icon: <ExcelIcon />,
+    label: 'Upload as Excel',
+  },
+];

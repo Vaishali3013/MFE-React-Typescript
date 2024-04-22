@@ -1,0 +1,186 @@
+@import '../../../../styles/global-settings.scss';
+// css for drawer
+.editBlaDrawer {
+    position: absolute;
+    width: 720px;
+    height: 689px;
+    right: 0px;
+    bottom: 0px;
+    background: $neutral-1;
+    box-shadow: 9px 0px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 0px 8px;
+    .ant-drawer-body {
+        padding: 24px 24px 0px 24px !important;
+    }
+    &__icon {
+        color: $title-45;
+        float: right;
+    }
+    &__heading {
+        span {
+            @include textfontstyle;
+            color: $title-85;
+        }
+    }
+    &__subHeading {
+        span {
+            @include textfontstyle;
+            color: $title-45;
+            line-height: 20px;
+        }
+    }
+    &__tabContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__switch {
+        margin-left: 4px;
+    }
+    .ant-tabs-nav {
+        margin-left: 0;
+    }
+    &__deviceDetails {
+        font-size: 12px;
+    }
+    &__button {
+        bottom: 10px !important;
+    }
+    .ant-divider-horizontal {
+        display: flex;
+        clear: both;
+        width: 100%;
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
+.editBlaWrapperNoPadding {
+    gap: 10px;
+    background-color: #ffffff;
+    padding-top: 12px;
+    .ant-input-affix-wrapper {
+        gap: 10px;
+        padding: 12px;
+    }
+    &__card {
+        height: calc(100vh - 410px);
+        margin: auto;
+    }
+    &__cardInBlaWizard {
+        height: calc(100vh - 510px);
+        padding: 0px;
+    }
+    &__cardInDeviceWizard {
+        height: calc(100vh - 460px);
+        padding: 0px;
+    }
+    &__search {
+        width: 300px;
+        height: 40px;
+        background: $neutral-6;
+        border: none;
+        border-radius: 8px;
+        input.ant-input {
+            background: $neutral-6;
+        }
+        span {
+            color: $title-45;
+        }
+    }
+    &__tableEmpty {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+    }
+    &__buttonGroup {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+.editBlaWrapper__blaList {
+    margin-top: 12px;
+    height: calc(100vh - 420px) !important;
+    overflow-y: scroll;
+}
+.editBlaWrapper__blaEditList {
+    margin-top: 12px;
+    height: calc(100vh - 523px) !important;
+    overflow-y: scroll;
+}
+.editBlaWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 133px 180px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+.editBlaPagination {
+    position: absolute;
+    left: 0;
+    background: $neutral-1;
+    box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.13);
+    width: calc(100% + 48px);
+    padding: 12px 24px 16px 24px;
+    z-index: 1;
+    text-align: end;
+    margin-left: -24px;
+}
+
+.deviceDrawerMultiplePopover.ant-popover-placement-bottomLeft {
+    .ant-popover-arrow {
+        left: 0px !important;
+        top: -11px !important;
+    }
+    .ant-popover-content {
+        left: -13px !important;
+        top: -11px !important;
+    }
+}
+.deviceDrawerMultiplePopover.ant-popover-placement-topLeft {
+    .ant-popover-arrow {
+        left: 0px !important;
+        bottom: -11px !important;
+    }
+    .ant-popover-content {
+        left: -13px !important;
+        top: 11px !important;
+    }
+}
+
+.deviceDrawerPopover.ant-popover-placement-bottomLeft {
+    .ant-popover-arrow {
+        left: 0px !important;
+        top: -11px !important;
+    }
+    .ant-popover-content {
+        left: -13px !important;
+        top: -11px !important;
+    }
+}
+.deviceDrawerPopover.ant-popover-placement-topLeft {
+    .ant-popover-arrow {
+        left: 0px !important;
+        bottom: -11px !important;
+    }
+    .ant-popover-content {
+        left: -13px !important;
+        top: 11px !important;
+    }
+}
+li.moreContent__deviceItems {
+    list-style: none;
+    padding: 0px;
+    .moreContent__option {
+        font-size: 14px;
+    }
+    .moreContent__option:hover {
+        cursor: pointer;
+    }
+    .moreContentIcon {
+        margin-right: 8.6px;
+        vertical-align: middle;
+    }
+}

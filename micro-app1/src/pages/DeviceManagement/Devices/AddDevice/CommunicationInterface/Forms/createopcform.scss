@@ -1,0 +1,170 @@
+.form-container {
+    .form-heading {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fafafa;
+        box-shadow: inset 0px -1px 0px #f0f0f0;
+        border-radius: 2px 2px 0px 0px;
+        margin: 0;
+        // font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0px 24px;
+    }
+
+    .ant-collapse-item {
+        border-bottom: none;
+        border: none !important;
+        border-radius: 0px !important;
+    }
+
+    .devices-panel {
+        .ant-collapse-header {
+            display: flex;
+            align-items: center;
+        }
+        .opc-form-switch {
+            margin-left: auto;
+        }
+        .opc-form-select {
+            width: 100%;
+        }
+    }
+    .error-message {
+        margin-left: 6px;
+    }
+}
+
+.header {
+    display: flex;
+
+    .heading {
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.65);
+    }
+}
+
+.form-row {
+    margin-bottom: 16px;
+
+    .radio-group {
+        display: flex;
+        label {
+            font-size: 14px;
+        }
+    }
+
+    .tooltip {
+        margin-left: 8px;
+    }
+}
+
+.last-row {
+    display: flex;
+
+    .tooltip {
+        margin-left: 8px;
+    }
+}
+.last-row-mb-20 {
+    display: flex;
+    margin: 20px 0;
+    .tooltip {
+        margin-left: 8px;
+    }
+}
+
+.input {
+    margin-top: 8px;
+}
+
+.plc-dropdown {
+    padding: 24px;
+    padding-bottom: 0px;
+    .ant-select {
+        width: 100%;
+    }
+    .title {
+        display: flex;
+        margin-bottom: 16px;
+
+        .label {
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+}
+
+.form-action-btns {
+    display: flex;
+    margin: 16px 24px 16px 0px;
+    justify-content: flex-end;
+
+    .back-btn {
+        margin-right: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    .next-btn {
+        color: #40a9ff;
+        border: 1px solid #40a9ff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+}
+.plc-dropdown-modal {
+    padding: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+    .ant-select {
+        width: 100%;
+    }
+    .title {
+        display: flex;
+        margin-bottom: 16px;
+
+        .label {
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+}
+
+
+// .opcForm {
+.ant-drawer .ant-drawer-content {
+    border-radius: 12px 0px 0px 12px;
+    background: #ffffff;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.19);
+    .ant-drawer .ant-drawer-body {
+        padding: 0px !important;
+    }
+}
+.ant-collapse {
+    border: none !important;
+    background-color: #e8ecfd !important;
+    box-shadow: 0px -1px 0px 0px #f0f0f0 inset;
+    border-radius: 0px !important;
+    .ant-collapse-content {
+        border-top: none !important;
+    }
+    .ant-input-affix-wrapper {
+        padding: 5px !important;
+    }
+}
+button.ant-switch.opc-form-switch {
+    margin-left: auto;
+}

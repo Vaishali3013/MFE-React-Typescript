@@ -1,0 +1,98 @@
+.resonCodeModalContent {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    height: 600px;
+    width: 100% !important;
+
+    &__content {
+        width: 100% !important;
+        display: flex;
+        gap: 15px;
+    }
+    .ant-list {
+        height: 100% !important;
+    }
+    .ant-spin-nested-loading {
+        height: 100% !important;
+    }
+    .ant-spin-container {
+        height: 100% !important;
+    }
+}
+
+.resonCodeModalPlannedContent {
+    width: 35% !important;
+    height: 100%;
+    border-radius: 0px !important;
+    border-right: 1px solid #d9d9d9 !important;
+    text-align: center;
+    padding: 10px;
+    // overflow-y: scroll;
+
+    ul.ant-list-items {
+        display: flex;
+        flex-direction: column;
+        height: 100% !important;
+        overflow-y: scroll;
+        align-items: center;
+    }
+    li.ant-list-item {
+        margin: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        padding: 10px;
+        width: 240px;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 1px solid #d9d9d9; // Ensure border-bottom for the last item
+        }
+    }
+}
+.resonCodeModalUnplannedContent {
+    width: 100% !important;
+    height: 100%;
+    border: 0px !important;
+    border-radius: 0px !important;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    // overflow-y: scroll;
+
+    ul.ant-list-items {
+        // Will use later on
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // height: 100% !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px; /* Increase horizontal gap */
+        grid-row-gap: 10px; /* Keep vertical gap smaller */
+        overflow-y: scroll;
+    }
+    li.ant-list-item {
+        margin: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        padding: 10px;
+        width: 240px;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 1px solid #d9d9d9; // Ensure border-bottom for the last item
+        }
+    }
+}
+.resonCodeModalPlannedContentList {
+    width: 100%;
+
+    &__text {
+        width: 100%;
+        text-align: left;
+    }
+}

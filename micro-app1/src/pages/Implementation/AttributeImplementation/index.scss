@@ -1,0 +1,125 @@
+@import "../../../styles/colorVariable";
+@import "../../../styles/global-settings.scss";
+.attribute {
+  &__header {
+    justify-content: space-between;
+    .attribute__d-flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__assignText {
+    margin-left: 8px;
+  }
+
+  &__searchBox {
+    margin-left: 8px;
+  }
+  &__search {
+    input.ant-input {
+      background: $gray-3;
+      height: 16px;
+      margin-top: -4px;
+    }
+    width: 209px !important;
+    height: 32px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: $neutral-6 !important;
+    .ant-select-selector,
+    .ant-input-outlined:focus,
+    .ant-input-outlined:hover {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px !important;
+      margin-left: 4px !important;
+    }
+    span {
+      color: $title-45 !important;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+    &:hover input.ant-input,
+    &:hover .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+
+    /* Focus effect */
+    &:focus-within input.ant-input,
+    &:focus-within .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+  }
+  &__backIcon {
+    color: $gray-8;
+  }
+  &__assignMoreBtn {
+    width: 115px;
+  }
+  .ant-badge-count {
+    background-color: $primary-8 !important;
+    color: $primary-9 !important;
+  }
+  .attribute__searchBox {
+    margin-left: 8px;
+  }
+  .attribute__backIcon {
+    cursor: pointer;
+  }
+  .customPaginationStatic {
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+.attributeTable {
+  margin-top: 8px;
+  .ant-table-wrapper {
+    margin-left: 4px;
+  }
+}
+.attributeFooter {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  &__btns {
+    justify-content: center;
+  }
+}
+.cancelBtn {
+  padding-right: 4px;
+}
+.saveBtn {
+  padding-left: 4px;
+}
+.tableWithFooter {
+  margin-top: 8px;
+  margin-left: 4px;
+}
+.attribute__pagination {
+  background: $neutral-1;
+  box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  padding: 12px 24px 16px 24px;
+  z-index: 1;
+  text-align: end;
+  position: absolute;
+  bottom: 70px;
+}
+.attributeEmptyDataComponent {
+  @include flexprob;
+  height: calc(100vh - 300px);
+}

@@ -1,0 +1,61 @@
+@import '../../../../styles/global-settings.scss';
+
+.viewUser {
+    &__personalInfo {
+        width: 90%;
+        margin: auto;
+        padding: 17px 0;
+        &__button {
+            display: grid;
+            justify-content: flex-end;
+            align-items: end;
+        }
+        &__content {
+            color: $title-85;
+            .profileContainer {
+                img,
+                span {
+                    width: 92px;
+                    height: 92px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    .view__initials {
+                        @include flexprob;
+                    }
+                }
+            }
+            .mobileNumber,
+            .emailId {
+                color: $title-45;
+            }
+        }
+    }
+    &__details {
+        border-top: 0.5px solid $border;
+        &__content {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            .item_firstrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .item_secondrow {
+                display: flex;
+                width: 66%;
+            }
+            .item {
+                width: 100%;
+                padding: 0 40px;
+                :nth-child(1) {
+                    color: $title-45;
+                }
+                :nth-child(2) {
+                    color: $title-85;
+                }
+            }
+        }
+    }
+}

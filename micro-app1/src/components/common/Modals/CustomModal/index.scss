@@ -1,0 +1,29 @@
+@import '../../../../styles/global-settings.scss';
+
+.customModal {
+    .ant-modal {
+        .ant-modal-close-x {
+            font-size: 12px;
+        }
+        .ant-modal-close {
+            top: 32px;
+        }
+        .ant-modal-content {
+            padding: 0px;
+        }
+    }
+    &__body {
+        &__header {
+            padding: 28px 10% 28px 28px;
+            @include flexprob;
+            justify-content: space-between;
+            align-content: center;
+            border-bottom: 1px solid $neutral-5;
+        }
+    }
+}
+
+.backIcon {
+    margin-right: 12px;
+    cursor: pointer;
+}

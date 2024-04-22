@@ -1,0 +1,44 @@
+@import '../../../../styles/global-settings.scss';
+.excessOxygenWrapper {
+    height: 174px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-weight: 500;
+
+    .ant-card-body {
+        width: 100%;
+        height: 100%;
+        .excessOxygenContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            &__span {
+                font-size: 16px;
+            }
+            &__charts {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                div:nth-child(1) {
+                    width: 100%;
+                    height: 100%;
+                    @include flexprob;
+                    overflow: visible !important;
+                    .highcharts-credits {
+                        display: none;
+                    }
+                }
+            }
+            .highcharts-root {
+                height: 70%;
+            }
+            &__loader {
+                @include flexprob;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,260 @@
+@import "../../../../styles/global-settings.scss";
+
+// css for drawer
+.editBlaDrawer {
+  position: absolute;
+  width: 720px;
+  height: 689px;
+  right: 0px;
+  bottom: 0px;
+  background: $neutral-1;
+  box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0px 0px 8px;
+  &__icon {
+    color: $title-45;
+    float: right;
+  }
+  &__table {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &__heading {
+    span {
+      @include textfontstyle;
+      color: $title-85;
+    }
+  }
+  &__subHeading {
+    @include textfontstyle;
+    color: $title-45;
+    line-height: 20px;
+    overflow-wrap: break-word;
+  }
+  &__textArea {
+    @include textfontstyle;
+    color: $title-45;
+    line-height: 20px;
+    width: 100%;
+  }
+  &__tabContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: visible;
+  }
+  &__switch {
+    margin-left: 4px;
+  }
+  &__button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+  }
+
+  &__footerButtons {
+    justify-content: center;
+    col {
+      margin-right: 10px;
+    }
+  }
+  &__saveButton {
+    padding-left: 4px;
+  }
+  &__cancelButton {
+    padding-right: 4px;
+  }
+  .ant-tabs-nav {
+    margin-left: 0;
+  }
+}
+
+.editBlaWrapper {
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 24px;
+  .ant-input-affix-wrapper {
+    gap: 10px;
+    padding: 12px;
+    width: 240px;
+  }
+
+  &__viewCard {
+    height: calc(100vh - 384px);
+    margin: auto;
+  }
+  &__editCard {
+    height: calc(100vh - 490px);
+    margin: auto;
+  }
+  &__search {
+    width: 250px;
+    height: 40px;
+    background: $neutral-6;
+    border: none;
+    border-radius: 8px;
+    input.ant-input {
+      background: $neutral-6;
+    }
+    span {
+      color: $title-45;
+    }
+    .ant-select-selector {
+      background: #f6f7f9 !important;
+      border: none !important;
+      padding: 4px;
+      width: 250px;
+      height: 40px;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px;
+      margin-left: 4px;
+    }
+    .ant-select-arrow {
+      display: none;
+    }
+  }
+  &__blaTableEmpty {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    .EmptyDataComponent__buttons__customButton {
+      padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+      width: 143px;
+      margin: 0 auto;
+    }
+    .bulk-importbtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__buttonGroup {
+    border: 1px solid $primary-4;
+    color: $primary-4;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+.editBlaWrapper__blaList {
+  margin-top: 12px;
+  height: calc(100vh - 450px);
+  overflow-y: scroll;
+}
+.editBlaWrapper__blaEditList {
+  margin-top: 12px;
+  height: calc(100vh - 486px);
+  overflow-y: scroll;
+}
+.editBlaWrapper__header {
+  display: grid;
+  grid-template-columns: 1fr 133px 180px;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.editPagination {
+  position: absolute;
+  left: 0;
+  background: $neutral-1;
+  box-shadow: 0px -9px 24px rgba(0, 0, 0, 0.13);
+  width: calc(100% + 48px);
+  padding: 12px 24px 16px 24px;
+  z-index: 1;
+  text-align: end;
+  margin-left: -24px;
+}
+
+li.moreContent__blaItems {
+  list-style: none;
+  padding: 0px;
+  .moreContent__option {
+    font-size: 14px;
+  }
+  .moreContent__option:hover {
+    cursor: pointer;
+  }
+  .moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+  }
+}
+
+.ant-modal-root .ant-modal-mask {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7.5px);
+}
+
+.cloneDeviceModal {
+  .bla__row {
+    justify-content: flex-end;
+    .ant-select.ant-select-in-form-item {
+      width: -webkit-fill-available;
+    }
+  }
+  .map__tags__row {
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    text-align: end;
+  }
+  .map__tags__edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__link {
+      color: blue;
+    }
+  }
+  .cloneDeviceModal__title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .ant-modal {
+    width: 603px !important;
+  }
+  &__body {
+    width: 65%;
+    margin: auto;
+    padding: 14% 0;
+  }
+}
+
+.view__loader {
+  width: 100vw;
+}
+
+.blaEditDrawer {
+  .editBlaWrapper {
+    padding: 24px 0px !important;
+  }
+}
+
+.editBlaDrawerPopover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.editBlaDrawerPopover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}

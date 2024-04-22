@@ -1,0 +1,19 @@
+@import '../../styles/global-settings.scss';
+
+.braboAssistant {
+    background: white;
+    height: calc(100vh - 50px);
+    @include flexprob;
+    &__iframe {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        &__title {
+            line-height: 48px;
+            color: $black-3;
+        }
+        height: 100%;
+        width: 100%;
+    }
+}

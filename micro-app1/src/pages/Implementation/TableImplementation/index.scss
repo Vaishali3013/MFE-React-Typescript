@@ -1,0 +1,117 @@
+@import "../../../styles/colorVariable";
+.tableImplementation {
+  &__header {
+    justify-content: space-between;
+    margin-left: 8px;
+  }
+  &__assignText {
+    margin-left: 8px;
+  }
+  &__searchBox {
+    margin-left: 8px;
+  }
+  &__search {
+    input.ant-input {
+      background: $gray-3;
+      height: 16px;
+      margin-top: -4px;
+    }
+    width: 209px !important;
+    height: 32px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: $neutral-6 !important;
+    .ant-select-selector,
+    .ant-input-outlined:focus,
+    .ant-input-outlined:hover {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px !important;
+      margin-left: 4px !important;
+    }
+    span {
+      color: $title-45 !important;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+    &:hover input.ant-input,
+    &:hover .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+
+    /* Focus effect */
+    &:focus-within input.ant-input,
+    &:focus-within .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      width: 300px !important;
+    }
+  }
+  &__backIcon {
+    color: $gray-8;
+    cursor: pointer;
+  }
+  &__assignMoreBtn {
+    width: 115px;
+    float: inline-end;
+    margin-right: 12px;
+  }
+  .ant-divider-horizontal {
+    margin: 16px 0px;
+  }
+}
+
+.tableImplementationTable {
+  margin-top: 8px;
+  .ant-table-wrapper {
+    margin-left: 4px;
+  }
+}
+.tableImplementationFooter {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  &__btns {
+    justify-content: center;
+  }
+}
+.cancelBtn {
+  padding-right: 4px;
+}
+.saveBtn {
+  padding-left: 4px;
+}
+.tableWithFooter {
+  margin-top: 8px;
+}
+.tableImplementation__unassignedPagination {
+  background: $neutral-1;
+  box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  padding: 12px 24px 16px 24px;
+  z-index: 1;
+  text-align: end;
+  position: absolute;
+  bottom: 70px;
+}
+.tableImplementation__assignedPagination {
+  background: $neutral-1;
+  box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  padding: 12px 24px 16px 24px;
+  z-index: 1;
+  text-align: end;
+  position: absolute;
+  bottom: 4px;
+}

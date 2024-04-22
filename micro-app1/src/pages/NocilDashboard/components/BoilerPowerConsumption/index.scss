@@ -1,0 +1,94 @@
+@import '../../../../styles/global-settings.scss';
+
+.BoilerPowerConsumptionWrapper {
+    height: 155px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-weight: 500;
+
+    .ant-card-body {
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.96px;
+        text-align: left;
+    }
+
+    &__heading-span {
+        font-size: 12px;
+    }
+
+    &__loader {
+        @include flexprob;
+        width: 100%;
+    }
+    &__contentBody {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__dataValues {
+        display: flex;
+        flex-direction: column;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        &__values {
+            display: flex;
+            font-family: Inter;
+            color: $black;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+            text-align: left;
+            align-items: baseline;
+            gap: 2px;
+        }
+
+        &__value {
+            display: flex;
+            font-family: Inter;
+            color: $black;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &__units {
+            display: flex;
+            color: $title-45;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+            text-align: left;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__name {
+            display: flex;
+            color: $black-7;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}

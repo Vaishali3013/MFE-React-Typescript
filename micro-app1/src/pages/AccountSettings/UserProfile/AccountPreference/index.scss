@@ -1,0 +1,34 @@
+@import '../../../../styles/global-settings.scss';
+
+.accountPreference {
+  // Keeping it for reference
+  // @include themify($themes) {
+  //   background: themed('bodyBackgroundColor');
+  //   .ant-radio-wrapper {
+  //     color: themed('textColor');
+  //   }
+  // }
+  &__light,
+  &__dark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .blue-overlay {
+      border-width: 2px;
+      border-style: solid;
+      border-color: $geek-blue;
+      border-radius: 4px;
+      width: 154px;
+      height: 102px;
+      position: absolute;
+      top: 0;
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $title-65;
+    }
+  }
+}

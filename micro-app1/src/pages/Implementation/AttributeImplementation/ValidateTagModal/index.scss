@@ -1,0 +1,83 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.validateTagModal {
+    width: 50% !important;
+    .ant-modal-content {
+        padding: 0 !important;
+    }
+    .ant-modal-header {
+        border: 1px solid neutral-4;
+        border-color: neutral-4;
+        padding: 16px 24px 0px;
+    }
+
+    .ant-modal-footer {
+        padding: 16px 24px;
+        border: 1px solid neutral-4;
+        border-color: neutral-4;
+        @include flexprob;
+        border-radius: 10px;
+        .customButton {
+            width: 20%;
+        }
+    }
+    .ant-modal-body {
+        padding: 24px;
+    }
+    .tagValue__title {
+        padding: 24px;
+        button {
+            margin-right: 10px;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .ant-modal-body {
+        padding: 0 !important;
+    }
+    .textarea-value {
+        padding: 24px;
+    }
+    .ant-divider {
+        margin: 0;
+    }
+
+    .ant-table-container {
+        margin: 0 24px;
+    }
+    .ant-select-arrow{
+        cursor: pointer!important;
+        pointer-events: unset!important;
+    }
+    span.ant-select-selection-item .ant-radio-inner {
+        display: none;
+    }
+    .customPaginationStatic {
+        position: relative;
+    }
+    .assest-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+        .ant-select {
+            width: 100% !important;
+            margin-right: 20px;
+        }
+        .ant-input-affix-wrapper{
+            padding: 5px;
+            
+        }
+    }
+ 
+}
+
+
+.search, .selectAsset{
+    width: 45%;
+}
+// .divider{
+//     margin-top:4% !important
+// }

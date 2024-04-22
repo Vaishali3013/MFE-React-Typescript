@@ -1,0 +1,74 @@
+@import '../../../styles/global-settings.scss';
+
+.EmptyDataComponent {
+    @include flexprob;
+    flex-direction: column;
+    &__buttons {
+        @include flexprob;
+        margin-top: 37px;
+        .customDropDown {
+            .ant-select-selector {
+                span:nth-child(2) {
+                    color: black;
+                }
+            }
+        }
+        &__customButtons {
+            width: 124px;
+        }
+    }
+}
+
+.SearchEmptyComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh  - 500px);
+  &__buttons {
+    @include flexprob;
+    margin-top: 37px;
+    .customDropDown {
+      .ant-select-selector {
+        span:nth-child(2) {
+          color: black;
+        }
+      }
+    }
+    &__customButtons {
+      width: 124px;
+    }
+  }
+}
+
+.bulk-importbtn .EmptyDataComponent__buttons__customButton {
+    display: flex;
+    align-items: center;
+    button {
+        margin-right: 10px;
+    }
+    .dropdown-bulk-upload {
+        background: transparent;
+    }
+}
+
+.SearchEmptyComponent {
+  @include flexprob;
+  height: calc(100vh - 500px);
+  &__buttons {
+      @include flexprob;
+      margin-top: 37px;
+      .customDropDown {
+          .ant-select-selector {
+              span:nth-child(2) {
+                  color: $black-2;
+              }
+          }
+      }
+      &__customButtons {
+          width: 124px;
+      }
+  }
+  &__image {
+      @include flexprob;
+  }
+}

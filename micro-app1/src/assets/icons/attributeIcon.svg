@@ -1,0 +1,32 @@
+<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_546_2089" fill="white">
+<rect x="1.74121" y="2" width="5.01" height="5.00586" rx="0.5"/>
+</mask>
+<rect x="1.74121" y="2" width="5.01" height="5.00586" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-1-inside-1_546_2089)"/>
+<circle cx="4.17097" cy="4.46797" r="0.66951" fill="#8C8C8C"/>
+<mask id="path-3-inside-2_546_2089" fill="white">
+<rect x="7.68457" y="2" width="13.9923" height="4.99219" rx="0.5"/>
+</mask>
+<rect x="7.68457" y="2" width="13.9923" height="4.99219" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-3-inside-2_546_2089)"/>
+<line x1="13.5371" y1="4.52185" x2="15.8423" y2="4.52185" stroke="#8C8C8C"/>
+<mask id="path-5-inside-3_546_2089" fill="white">
+<rect x="1.74121" y="8.50586" width="5.01" height="5.00586" rx="0.5"/>
+</mask>
+<rect x="1.74121" y="8.50586" width="5.01" height="5.00586" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-5-inside-3_546_2089)"/>
+<circle cx="4.17097" cy="10.9738" r="0.66951" fill="#8C8C8C"/>
+<mask id="path-7-inside-4_546_2089" fill="white">
+<rect x="7.68457" y="8.50586" width="13.9923" height="4.99219" rx="0.5"/>
+</mask>
+<rect x="7.68457" y="8.50586" width="13.9923" height="4.99219" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-7-inside-4_546_2089)"/>
+<line x1="13.5371" y1="11.0277" x2="15.8423" y2="11.0277" stroke="#8C8C8C"/>
+<mask id="path-9-inside-5_546_2089" fill="white">
+<rect x="1.74121" y="15.0117" width="5.01" height="5.00586" rx="0.5"/>
+</mask>
+<rect x="1.74121" y="15.0117" width="5.01" height="5.00586" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-9-inside-5_546_2089)"/>
+<circle cx="4.17097" cy="17.4797" r="0.66951" fill="#8C8C8C"/>
+<mask id="path-11-inside-6_546_2089" fill="white">
+<rect x="7.68457" y="15.0117" width="13.9923" height="4.99219" rx="0.5"/>
+</mask>
+<rect x="7.68457" y="15.0117" width="13.9923" height="4.99219" rx="0.5" stroke="#8C8C8C" stroke-width="2.5" mask="url(#path-11-inside-6_546_2089)"/>
+<line x1="13.5371" y1="17.5336" x2="15.8423" y2="17.5336" stroke="#8C8C8C"/>
+</svg>

@@ -1,0 +1,387 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.addBlaWrapper {
+    gap: 10px;
+    padding: 12px;
+    .editBlaWrapper {
+        &__card {
+            height: calc(100vh - 478px);
+            padding: 0 24px;
+        }
+        &__blaEditList {
+            height: calc(100vh - 540px);
+        }
+    }
+    .ant-tabs-nav {
+        margin: 0px;
+    }
+
+    .ant-tabs-nav-wrap {
+        margin: 0px 0px 0px 24px;
+    }
+    .ant-tabs-extra-content {
+        flex: none;
+        margin: 0px 24px 0px 0px;
+    }
+    .ant-card-body {
+        padding: 0px;
+    }
+    &__headerWrapper {
+        padding: 21px 10px 15px 15px;
+        border-bottom: 0.5px solid $border;
+    }
+    &__addBlaList {
+        padding-top: 12px;
+        height: calc(100vh - 367px);
+    }
+    &__addBlaContent2 {
+        padding: 20px;
+    }
+
+    &__heading {
+        display: flex;
+    }
+    &__screenNameHeading{
+        margin-left: 10px;
+    }
+
+    &__backIcon {
+        width: 30px;
+        height: 32px;
+        padding: 8px 0 0 8px;
+        cursor: pointer;
+    }
+
+    &__createRowHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 15px 20px;
+        border-bottom: 0.5px solid $border;
+    }
+
+    &__button {
+        .ant-btn {
+            padding: 0px;
+        }
+        width: 131px;
+        height: 32px;
+    }
+
+    &__search {
+        width: 300px;
+        height: 40px;
+        background: $gray-3;
+        border: none;
+        border-radius: 8px;
+        input.ant-input {
+            background: $gray-3;
+        }
+        span {
+            color: $title-45;
+        }
+    }
+    &__addBlaContent {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    &__addBlaDropdownContent {
+        width: 30%;
+        border-right: 0.5px solid $border;
+        padding: 10px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__addBlaTableContent {
+        width: 70%;
+        padding: 10px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__addBlaDropdownCollapse {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__buttonGroup {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100%;
+    }
+    &__buttonGroupIcon {
+        color: $primary-4;
+        size: 12px;
+    }
+
+    &__addBlaTableHeader {
+        color: $title-45;
+        font-weight: bold;
+        display: flex;
+    }
+    &__addBlaSwitch {
+        width: 28px;
+    }
+    &__addBlaTableContentRow {
+        width: 100%;
+    }
+    &__addBlaTypographySwitch {
+        width: 50%;
+        text-align: center;
+    }
+    &__addBlaTypography {
+        width: 100%;
+        text-align: left;
+    }
+    &__addBlaSwitch {
+        width: 50%;
+        align-items: center;
+    }
+    &__addBlaFooter {
+        @include flexprob;
+        background: $neutral-1;
+        width: 100%;
+        padding: 12px 24px 16px 24px;
+        z-index: 1;
+        gap: 8px;
+        border-top: 0.5px solid $border;
+    }
+    &__footerButtonWrapper {
+        width: 110px;
+        .ant-btn-primary {
+            min-width: 100%
+        }
+    }
+    &__addBlaList {
+        background-color: $neutral-7;
+        padding: 0px 12px;
+        .ant-list-item {
+            padding: 12px 0px;
+        }
+    }
+    &__addBlaTableContentRowHeader {
+        padding: 0px 12px;
+    }
+    &__addBlaContent {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 440px);
+        width: 100%;
+        overflow-y: scroll;
+    }
+    &__addBlaInnerContent {
+        display: flex;
+        width: 80%;
+        gap: 10px;
+        margin: 20px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__addBlaInnerContentText {
+        width: 25%;
+        text-align: end;
+    }
+    &__addBlaInnerContentInput {
+        width: 35%;
+    }
+    &__stepperContent {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__stepper {
+        width: 50%;
+    }
+    &__tableHeader {
+        border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+    }
+}
+
+.addBlaWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 133px 124px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.mandatoryClass {
+    color: $red-3;
+}
+
+.deviceTableWrapper {
+    gap: 10px;
+    background-color: #ffffff;
+    padding-top: 12px;
+    .ant-input-affix-wrapper {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    &__card {
+        height: calc(100vh - 480px);
+        margin: 0px 24px;
+    }
+    &__search {
+        width: 300px;
+        height: 40px;
+        background: $neutral-6;
+        border: none;
+        border-radius: 8px;
+        input.ant-input {
+            background: $neutral-6;
+        }
+        span {
+            color: $title-45;
+        }
+    }
+    &__blaTableEmpty {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        .EmptyDataComponent__buttons__customButton {
+            padding-top: 30px;
+        }
+        .EmptyDataComponent__buttons__customButton button {
+            width: 143px;
+            margin: 0 auto;
+        }
+        .bulk-importbtn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__buttonGroup {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+.deviceTableWrapper__blaList {
+    margin-top: 12px;
+    height: calc(100vh - 530px);
+    overflow-y: scroll;
+}
+.deviceTableWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 133px 180px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.deviceTablePagination {
+    position: absolute;
+    left: 0;
+    background: $neutral-1;
+    box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.13);
+    width: calc(100% + 48px);
+    padding: 12px 24px 16px 24px;
+    z-index: 1;
+    text-align: end;
+    margin-left: -24px;
+}
+
+.tagTableWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 133px 0px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.tagTableWrapper__empty-add-tag {
+    height: calc(100vh - 473px);
+    .EmptyDataComponent__buttons__customButton {
+        padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+        width: 143px;
+        margin: auto !important;
+    }
+}
+// css for drawer
+.addTagDrawer {
+    position: absolute;
+    width: 720px;
+    height: 689px;
+    right: 0px;
+    bottom: 0px;
+    background: $neutral-1;
+    box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 0px 8px;
+    &__divider {
+        margin: 8px 0;
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+    &__icon {
+        color: $title-45;
+        float: right;
+    }
+    &__heading {
+        span {
+            @include textfontstyle;
+            color: $title-85;
+        }
+    }
+    &__label {
+        @include textfontstyle;
+        color: $title-85;
+        line-height: 22px;
+        span {
+            color: $red-3;
+        }
+    }
+    &__formSectionLeft {
+        padding: 16px 12px 16px 0px;
+    }
+
+    &__formSectionRight {
+        padding: 16px 0px 16px 12px;
+    }
+    &__input {
+        border-radius: 2px;
+        margin-top: 4px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        left: 0;
+    }
+    &__footerButtons {
+        justify-content: center;
+        col {
+            margin-right: 10px;
+        }
+    }
+    &__saveButton {
+        padding-left: 4px;
+    }
+    &__cancelButton {
+        padding-right: 4px;
+    }
+    .ant-tabs-nav {
+        margin-left: 0;
+    }
+    .ant-space {
+        display: grid;
+        grid-template-columns: 1fr 230px 20px;
+        align-items: center;
+    }
+}
+
+.selectInterfaceParent {
+    height: calc(100vh - 284px);
+}
+.ant-steps-item-process .ant-steps-item-icon {
+    background-color: $primary-4 !important;
+    border-color: $primary-4 !important;
+  }

@@ -1,0 +1,61 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.staticValueModal {
+    width: 40% !important;
+    .ant-modal-content {
+        padding: 0 !important;
+    }
+    .ant-modal-header {
+        border: 1px solid neutral-4;
+        border-color: neutral-4;
+        padding: 16px 24px;
+        position: relative;
+    }
+
+    .ant-modal-footer {
+        padding: 16px 24px;
+        border: 1px solid neutral-4;
+        border-color: neutral-4;
+        @include flexprob;
+        border-radius: 10px;
+        .customButton {
+            width: 20%;
+        }
+    }
+    .ant-modal-body {
+        padding: 24px;
+    }
+    .staticValue__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        button {
+            margin-right: 10px;
+            border-color: $primary-7;
+            color: $primary-7;
+        }
+     
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .ant-modal-body {
+        padding: 0 !important;
+    }
+    .textarea-value {
+        padding: 10px 24px;
+    }
+    .ant-divider {
+        margin: 0;
+    }
+    .error {
+        border-color: $red-5;
+    }
+    p.error {
+        color: $red-5;
+    }
+}

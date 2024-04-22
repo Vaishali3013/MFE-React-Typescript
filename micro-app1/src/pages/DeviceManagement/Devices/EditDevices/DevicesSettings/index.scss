@@ -1,0 +1,44 @@
+@import '../../../../../styles/colorVariable';
+
+.deviceSettingDrawer {
+    &__saveButton {
+        padding-left: 4px;
+    }
+    &__cancelButton {
+        padding-right: 4px;
+    }
+}
+.drawer-title {
+    font-size: 20px;
+}
+.settings__backIcon {
+    margin-top: 10px;
+}
+.input-field {
+    border-radius: 2px;
+    width: 324px;
+}
+.ant-select.ant-select-in-form-item {
+    width: 324px;
+}
+.footerButtons {
+    justify-content: center;
+    col {
+        margin-right: 10px;
+    }
+}
+.button {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+}
+.editDeviceWrapper__deviceEditList {
+    margin-top: 12px;
+    height: calc(100vh - 426px);
+    overflow-y: scroll;
+}
+.device__details {
+    color: $title-45;
+}
+

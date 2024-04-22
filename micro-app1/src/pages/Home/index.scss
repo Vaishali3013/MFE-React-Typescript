@@ -1,0 +1,29 @@
+@import '../../styles/global-settings.scss';
+
+.home {
+    background: white;
+    height: calc(100vh - 50px);
+    @include flexprob;
+    .header {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        &__title {
+            line-height: 48px;
+            color: $black-3;
+        }
+    }
+    .subtitle {
+        color: $red-6;
+        text-align: center;
+        line-height: 32px;
+        padding-top: 10px;
+    }
+    .footer__text {
+        text-align: center;
+        line-height: 48px;
+        padding-top: 20px;
+        color: $gray-9;
+    }
+}

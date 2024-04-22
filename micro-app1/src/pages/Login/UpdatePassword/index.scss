@@ -1,0 +1,32 @@
+@import '../../../styles//global-settings.scss';
+.updatePassword{
+    .title{
+        margin-top: 20px;
+    }
+    .circle-img{
+   @include flexprob;
+   margin-top: 80px;
+    }
+    .pageHeaderTitle__subHeading {
+
+     padding: 0 70px;
+    line-height: 20px;
+   
+    }
+
+    .login-btn {
+        margin-top: 80px;
+    }
+    .copyright-text{
+     text-align: center;
+     margin-top: 100px;
+     display: block;
+    }
+    .screenNameHeading__subHeading span {
+      
+        display: block;
+        margin-top: 10%;
+        padding: 0 5%;
+        line-height: 22px;
+    }
+}

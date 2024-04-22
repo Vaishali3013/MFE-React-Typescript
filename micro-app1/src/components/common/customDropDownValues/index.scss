@@ -1,0 +1,12 @@
+.customDropDownValues {
+  .ant-select {
+    width: 280px !important;
+    .ant-select-selector {
+      width: 280px;
+      padding: 8px 12px;
+    }
+  }
+  &__empty {
+    height: 8px;
+  }
+}

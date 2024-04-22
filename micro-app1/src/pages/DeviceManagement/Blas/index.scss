@@ -1,0 +1,303 @@
+@import "../../../styles/global-settings.scss";
+
+// css for table
+.blaTableWrapper {
+  thead.ant-table-thead {
+    @include textfontstyle;
+    font-weight: 500;
+    font-size: 14px;
+    color: $title-85;
+  }
+  tr.ant-table-row {
+    @include textfontstyle;
+    font-weight: 400;
+    font-size: 14px;
+    color: $title-85;
+  }
+  .column-title,
+  &__columnTitle {
+    display: flex;
+    justify-content: space-between;
+    &__namePopup {
+      display: grid;
+      grid-template-columns: 1fr 10%;
+      justify-content: center;
+      align-items: center;
+      .sortArrows {
+        @include flexprob;
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+    &__name {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      justify-content: center;
+      align-items: center;
+      .sortArrows {
+        @include flexprob;
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+    .sortArrows {
+      @include flexprob;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+  &__nameData {
+    &__info {
+      cursor: pointer;
+      span {
+        white-space: break-spaces;
+      }
+    }
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    span {
+      @include textfontstyle;
+      color: $primary-6;
+      white-space: break-spaces;
+    }
+    span.ant-avatar.ant-avatar-circle.mr-10 {
+      color: $neutral-1;
+      margin-right: 10px;
+    }
+  }
+  &__status {
+    @include flexprob;
+    justify-content: flex-start;
+    gap: 8px;
+    color: $primary-4;
+  }
+  &__connectedDevices {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    flex-flow: wrap;
+    .activeButton {
+      color: $polar-green-6;
+      background-color: $polar-green-1;
+      border: 1px solid $polar-green-3;
+      border-radius: 2px;
+      width: 84px;
+      height: 24px;
+      font-size: 12px;
+      text-align: left;
+      padding: 2px 4px;
+    }
+    .inactiveButton {
+      color: $red-3;
+      background-color: $red-1;
+      border: 1px solid $red-2;
+      border-radius: 2px;
+      width: 84px;
+      height: 24px;
+      font-size: 12px;
+      text-align: left;
+      padding: 2px 4px;
+    }
+  }
+}
+.blaMoreContent_items {
+  list-style: none;
+  padding-bottom: 0px;
+}
+li.moreContent__items {
+  list-style: none;
+  padding-bottom: 12px;
+  .moreContent__option {
+    font-size: 14px;
+  }
+  .moreContent__option:hover {
+    cursor: pointer;
+  }
+  .moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+  }
+}
+
+.blaWrapper,
+.ant-input-affix-wrapper {
+  gap: 10px;
+  padding: 12px;
+  &__search {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    input.ant-input,
+    .ant-select-selector {
+      background: $neutral-6 !important;
+      border: none !important;
+      padding: 4px;
+      width: 300px;
+      height: 40px;
+    }
+    .ant-select-selector::before {
+      content: url("assets/icons/searchIcon.svg");
+      font-size: 5px;
+      margin-left: 4px;
+    }
+    span {
+      color: $title-45;
+    }
+    span.ant-select-selection-placeholder {
+      margin-left: 20px;
+    }
+    .ant-select-arrow {
+      display: none;
+    }
+  }
+  &__blaTableEmpty {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    .EmptyDataComponent__buttons__customButton {
+      padding-top: 30px;
+    }
+    .EmptyDataComponent__buttons__customButton button {
+      width: 143px;
+      margin: 0 auto;
+    }
+    .bulk-importbtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__drawer {
+    position: absolute;
+    width: 720px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    background: #ffffff;
+    box-shadow: -9px 0px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 0px 8px;
+  }
+  .ant-card {
+    height: calc(100vh - 218px);
+    margin: auto;
+  }
+  .ant-card-body {
+    height: 100%;
+  }
+}
+.blaWrapper__blaList {
+  padding-top: 12px;
+  overflow-y: scroll;
+}
+.blaWrapper__header {
+  display: grid;
+  grid-template-columns: 1fr 100px 133px;
+  grid-column-gap: 8px;
+  align-items: center;
+}
+
+.editDevice__mappedTag__tableContainer {
+  padding: 24px;
+  .ant-table-wrapper {
+    padding-top: 14px;
+  }
+}
+.moreContent__popOver {
+  width: 162px;
+}
+.customOverlay {
+  max-width: 400px;
+  .ant-popover-content {
+    inline-size: 310px;
+    word-break: break-all;
+    width: fit-content;
+  }
+}
+// NOTE- We have used negative values here because, we have to adjust the position of popover with respect to 3 dots and this is the only way possible.
+.blaTablePopover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.blaTablePopover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}
+.blaMultiplePopover.ant-popover-placement-bottomLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    top: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: -11px !important;
+  }
+}
+.blaMultiplePopover.ant-popover-placement-topLeft {
+  .ant-popover-arrow {
+    left: 0px !important;
+    bottom: -11px !important;
+  }
+  .ant-popover-content {
+    left: -13px !important;
+    top: 11px !important;
+  }
+}
+
+.ant-dropdown.bluk__upload {
+  ul.ant-dropdown-menu.ant-dropdown-menu-root {
+    li.ant-dropdown-menu-item {
+      padding-top: 8px;
+    }
+    li.ant-dropdown-menu-submenu.ant-dropdown-menu-submenu-vertical {
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 0px !important;
+    }
+  }
+  .ant-dropdown-menu {
+    padding: 0px !important;
+  }
+  .ant-dropdown-menu-submenu-title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+.ant-dropdown.export {
+  ul.ant-dropdown-menu.ant-dropdown-menu-root {
+    li.ant-dropdown-menu-item {
+      padding-top: 8px;
+    }
+    li.ant-dropdown-menu-submenu.ant-dropdown-menu-submenu-vertical {
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 6px 0px !important;
+    }
+  }
+  .ant-dropdown-menu {
+    padding: 0px !important;
+  }
+}
+ul.ant-dropdown-menu.ant-dropdown-menu-sub.ant-dropdown-menu-vertical {
+  padding: 0 !important;
+  li.ant-dropdown-menu-item {
+    padding-top: 8px;
+    padding-bottom: 6px;
+  }
+}
+
+.blaName {
+  white-space: break-spaces;
+}

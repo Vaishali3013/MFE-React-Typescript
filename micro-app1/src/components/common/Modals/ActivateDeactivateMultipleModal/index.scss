@@ -1,0 +1,100 @@
+@import '../../../../styles/global-settings.scss';
+
+.ant-modal-root .ant-modal-mask {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7.5px);
+}
+.activedeactiveModal.save {
+    width: 509px !important;
+}
+.activedeactiveModal.delete {
+    width: 593px !important;
+}
+.activedeactiveModal {
+    width: 509px !important;
+    .ant-modal-content {
+        padding: 0px !important;
+        .ant-modal-body {
+            @include flexprob;
+            padding: 52px 0px 22px 0px;
+            flex-direction: column;
+            gap: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            span {
+                @include textfontstyle;
+                color: $title-85;
+                text-align: center;
+            }
+        }
+        .ant-modal-close {
+            top: 26px !important;
+        }
+        .ant-modal-footer {
+            @include textfontstyle;
+            text-align: center;
+            margin-top: 0px !important;
+            padding: 24px 0px !important;
+
+            .ant-modal-footer-span {
+                margin: 0 12px !important;
+            }
+
+            .ant-btn-primary {
+                padding: 0px 26px !important;
+            }
+            .ant-btn-default {
+                width: 109px !important;
+                padding: 0px 15px !important;
+            }
+            .deactivate-all {
+                border: 0 !important;
+                box-shadow: none;
+                outline: none;
+                span {
+                    color: #ff4d4f !important;
+                    border: 1px solid #ff4d4f;
+                    padding: 0 10px !important;
+                    border-radius: 4px !important;
+                }
+            }
+            .activate-all span {
+                color: #fff !important;
+            }
+        }
+        .ant-modal-footer {
+            border-top: 1px solid #d3d3d3;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .text-width {
+        max-width: 70%;
+    }
+}
+
+.countAnalytics__activeUsers {
+    .countActive {
+        color: $polar-green-6 !important;
+    }
+    .countInactive {
+        color: $red-3 !important;
+    }
+    .count-title {
+        color: $gray-7 !important;
+    }
+}
+.countAnalyticsWrapper.count-confirmation-modal {
+    .countAnalyticsWrapper .countAnalytics .countAnalytics__countInfo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .count-title.align-text {
+        text-align: left !important;
+        color: $gray-7;
+    }
+}

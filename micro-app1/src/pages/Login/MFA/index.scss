@@ -1,0 +1,54 @@
+@import '../../../styles/global-settings.scss';
+.login {
+    #login_form_Otp {
+        .ant-input-suffix {
+            display: none;
+        }
+    }
+}
+.resendOtp {
+    display: flex;
+    justify-content: flex-end;
+    .timer {
+        color: $gray-4;
+    }
+    .resendOtpLink {
+        color: $primary-4;
+        cursor: pointer;
+    }
+}
+
+.changeText {
+    color: $primary-4;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+#login_form_Otp {
+    position: relative;
+
+    &::placeholder {
+        font-size: 48px !important;
+        
+    }
+    .ant-form-item-label > label {
+        color: $gray-4;
+        font-size: 16px !important;
+    }
+    .copyright-text {
+        @include flexprob;
+        color: $gray-4;
+        margin-top: 20%;
+    }
+}
+.verify-btn button {
+    margin-top: 60px;
+    height: 48px;
+    padding: 7px 20px;
+    background: $primary-5;
+    border: 1px solid $neutral-2;
+    border-radius: 8px;
+    width: 100%;
+    flex-grow: 1;
+    color: $neutral-1;
+}

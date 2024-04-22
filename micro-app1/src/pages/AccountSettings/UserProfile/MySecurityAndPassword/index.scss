@@ -1,0 +1,77 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/mixins';
+.passwordComponent {
+  padding: 12px;
+  height: 100%;
+  .ant-card {
+    height: 100%;
+    .ant-card-body {
+      padding: 0;
+      height: 100%;
+
+      .passwordContainer {
+        &__heading {
+          padding: 24px;
+          border-bottom: 1px solid $divider;
+        }
+        &__content {
+          width: 100%;
+          &__child {
+            margin: 0 auto;
+            margin-top: 55px;
+          }
+        }
+        &__form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 5%;
+          gap: 50px;
+          .ant-form-item {
+            width: 100%;
+            .ant-form-item-row {
+              @include flexprob;
+              .ant-form-item-label label {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: $title-45;
+                @include flexprob;
+                gap: 4px;
+                span {
+                  @include flexprob;
+                }
+              }
+            }
+          }
+          &__container {
+            width: 100%;
+          }
+          &__input {
+            .ant-row {
+              margin: auto;
+            }
+          }
+          &__divider {
+            height: 2px;
+            width: 100%;
+            background-color: $divider;
+          }
+          &__buttons {
+            display: flex;
+            .ant-row {
+              width: 20%;
+              margin: auto;
+              .ant-form-item-control-input-content {
+                display: flex;
+                gap: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

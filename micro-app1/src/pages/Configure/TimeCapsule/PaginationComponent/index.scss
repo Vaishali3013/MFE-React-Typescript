@@ -1,0 +1,16 @@
+@import '../../../../styles/global-settings.scss';
+
+.customPagination {
+  ul.ant-pagination {
+    position: static !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $neutral-1;
+    // box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.13);
+    width: 100%;
+    padding: 12px 24px 16px 24px;
+    z-index: 1;
+    text-align: end;
+  }
+}

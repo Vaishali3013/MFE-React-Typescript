@@ -1,0 +1,91 @@
+@import '../../../../../styles/colorVariable';
+@import '../../../../../styles/global-settings.scss';
+
+.tagModal {
+    .close-icon {
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+    }
+    .content {
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 482px; // Fixed width
+            height: 235px; // Fixed height
+            padding: 12px; // Padding
+            border-radius: 8px; // Border radius
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px; // Gap between spans
+            background-color: #f9f9f9;
+            margin-top: 20px;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                .key {
+                    flex: 1; // Allow key to grow and shrink
+                    text-align: left; // Align key to the left
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                }
+
+                .semicolon {
+                    flex: 0 0 auto; // Don't allow semicolon to grow or shrink
+                    width: 20px; // Set a fixed width for semicolon
+                    text-align: center; // Align semicolon to the center
+                    margin-right: 5px; // Adjust margin between key and semicolon
+                }
+
+                .value {
+                    flex: 1; // Allow value to grow and shrink
+                    text-align: left; // Align value to the left
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                }
+            }
+        }
+    }
+
+    .withoutBorderLi {
+        padding: 8px 0px;
+    }
+
+    .withBorderLi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 8px 0px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    span.ant-modal-close-x {
+        margin-top: 7px;
+    }
+   
+}
+.editButton{
+        border-color:$primary-3;
+        color:$primary-3
+        
+}
+.tagValue__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editButton {
+    margin-right: 10%;
+}

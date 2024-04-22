@@ -1,0 +1,94 @@
+@import '../../../styles/global-settings.scss';
+
+.rolesTableWrapper {
+  thead.ant-table-thead {
+    @include textfontstyle;
+    font-weight: 500;
+    font-size: 14px;
+    color: $title-85;
+  }
+
+  tr.ant-table-row {
+    @include textfontstyle;
+    font-weight: 400;
+    font-size: 14px;
+    color: $title-85;
+  }
+
+  .column-title,
+  &__columnTitle {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+      display: grid;
+      grid-template-columns: 10% 1fr 10%;
+      justify-content: center;
+      align-items: center;
+      .sortArrows {
+        @include flexprob;
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+
+    .sortArrows {
+      @include flexprob;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+  &__avatarGroup {
+    cursor: pointer;
+  }
+
+  .ant-avatar-group .ant-avatar {
+    border-color: #ffffff;
+    border: 2px solid;
+  }
+
+  .ant-avatar-group > *:not(:first-child) {
+    background-color: $progress-border;
+  }
+
+  &__nameDataRoles {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    span {
+      @include textfontstyle;
+    }
+
+    span.ant-avatar.ant-avatar-circle.mr-10 {
+      background-color: $volcano-4;
+      color: $neutral-1;
+      margin-right: 10px;
+    }
+    .name {
+      color: $primary-4;
+    }
+  }
+
+  &__status {
+    @include flexprob;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}
+
+// more content
+li.moreContent_items {
+  list-style: none;
+  padding-bottom: 12px;
+  .moreContent__option {
+    font-size: 14px;
+  }
+  .moreContent__option:hover {
+    cursor: pointer;
+  }
+  .moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+  }
+}

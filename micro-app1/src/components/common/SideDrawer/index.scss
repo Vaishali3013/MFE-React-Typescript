@@ -1,0 +1,23 @@
+@import '../../../styles/colorVariable';
+
+.Drawer__wrapper{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .ant-drawer-title {
+      margin: 0;
+    }
+  
+    .ant-drawer-close {
+      order: 2;
+      margin-left: auto;
+    }
+}
+.sideDrawer__inputBox{
+    border-radius: 2px;
+    border: 1px solid $neutral-5;
+    padding: 5px 12px;
+}

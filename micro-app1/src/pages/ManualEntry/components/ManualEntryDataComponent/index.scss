@@ -1,0 +1,44 @@
+@import '../../../../styles/colorVariable';
+@import '../../../../styles/global-settings.scss';
+
+.dataComponentWrapper {
+    display: flex;
+    gap: 15px;
+    .ant-input {
+        border-radius: 2px;
+        width: 256px;
+        height: 32px;
+    }
+    &__titleSection {
+        width: 165px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $title-85;
+    }
+    &__saveButton {
+        border: 1px solid $primary-4;
+        color: $primary-4;
+        border-radius: 4px;
+        width: 100px;
+        height: 32px;
+    }
+    &__inputSection {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    &__dscriptionSection {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $gray-8;
+    }
+}

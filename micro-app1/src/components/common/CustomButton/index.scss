@@ -1,0 +1,118 @@
+@import '../../../styles/global-settings.scss';
+
+.customButton {
+    @include flexprob;
+    flex-direction: row;
+    padding: 5px 16px;
+    height: 32px;
+    width: 100%;
+    gap: 7px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 4px;
+    background: $primary-6;
+    svg {
+        size: 12px;
+        color: $neutral-1;
+        stroke: $neutral-1;
+    }
+    span {
+        font-style: normal;
+        line-height: 22px;
+        text-align: center;
+        color: $neutral-1;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    &:hover {
+        background-color: $primary-5 !important;
+    }
+}
+.custom-cancel,
+.custom-delete,
+.custom-back {
+    background: $neutral-1;
+    box-shadow: 0px 2px 0px $shadow;
+    border: 1px solid $neutral-5;
+    span {
+        color: $title-85;
+    }
+    &:hover {
+        background-color: $neutral-1 !important;
+        box-shadow: 0px 2px 0px $shadow;
+        border: 1px solid $primary-5;
+        span {
+            color: $primary-6;
+        }
+    }
+}
+
+.custom-apply {
+    border: 1px solid $primary-7;
+    color: $primary-7;
+    background: $neutral-1;
+    span {
+        color: $primary-7;
+    }
+}
+
+.custom-back {
+    background: $neutral-1;
+    box-shadow: 0px 2px 0px $shadow;
+    border: 1px solid $neutral-5;
+    span {
+        color: $title-85;
+    }
+    &:hover {
+        background-color: $neutral-1 !important;
+        box-shadow: 0px 2px 0px $shadow;
+        border: 1px solid $primary-5;
+        span {
+            color: $primary-6;
+        }
+    }
+}
+
+.custom-मागे {
+    background: $neutral-1;
+    box-shadow: 0px 2px 0px $shadow;
+    border: 1px solid $neutral-5;
+    span {
+        color: $title-85;
+    }
+    &:hover {
+        background-color: $neutral-1 !important;
+        box-shadow: 0px 2px 0px $shadow;
+        border: 1px solid $primary-5;
+        span {
+            color: $primary-6;
+        }
+    }
+}
+
+.custom-close {
+    background: $neutral-1;
+    box-shadow: 0px 2px 0px $shadow;
+    border: 1px solid $neutral-5;
+    span {
+        color: $title-85;
+    }
+}
+.custom-edit:hover {
+    background: $neutral-1 !important;
+    box-shadow: 0px 2px 0px $shadow;
+    border: 1px solid $primary-5;
+    color: #5c79ef !important;
+    span {
+        color: $primary-6;
+    }
+}
+.button-disabled {
+    background: $neutral-3;
+    span {
+        color: $disabled-text;
+    }
+}
+.customButton.reason.code {
+    width: 145px !important;
+}

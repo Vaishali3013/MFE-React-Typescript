@@ -1,0 +1,211 @@
+@import '../../../styles/global-settings.scss';
+
+.devicesTableWrapper {
+    thead.ant-table-thead {
+        @include textfontstyle;
+        font-weight: 500;
+        font-size: 14px;
+        color: $title-85;
+    }
+    tr.ant-table-row {
+        @include textfontstyle;
+        font-weight: 400;
+        font-size: 14px;
+        color: $title-85;
+    }
+    .column-title,
+    &__columnTitle {
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            display: grid;
+            grid-template-columns: 10% 1fr 10%;
+            justify-content: center;
+            align-items: center;
+            .sortArrows {
+                @include flexprob;
+                flex-direction: column;
+                gap: 2px;
+            }
+        }
+        .sortArrows {
+            @include flexprob;
+            flex-direction: column;
+            gap: 2px;
+        }
+    }
+
+    &__nameData {
+        &__info {
+            cursor: pointer;
+            span {
+                white-space: break-spaces;
+            }
+        }
+        display: flex;
+        gap: 15px;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            @include textfontstyle;
+            white-space: break-spaces;
+        }
+        span.ant-avatar.ant-avatar-circle.mr-10 {
+            color: $neutral-1;
+            margin-right: 10px;
+        }
+    }
+    &__popover {
+        width: '162px';
+    }
+    &__status {
+        @include flexprob;
+        justify-content: flex-start;
+        gap: 8px;
+        color: $primary-4;
+    }
+    &__connectedDevices {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        flex-flow: wrap;
+        .activeButton {
+            color: $polar-green-6;
+            background-color: $polar-green-1;
+            border: 1px solid $polar-green-3;
+            border-radius: 2px;
+            width: 84px;
+            height: 24px;
+            font-size: 12px;
+            text-align: left;
+            padding: 2px 4px;
+        }
+        .inactiveButton {
+            color: $red-3;
+            background-color: $red-1;
+            border: 1px solid $red-2;
+            border-radius: 2px;
+            width: 84px;
+            height: 24px;
+            font-size: 12px;
+            text-align: left;
+            padding: 2px 4px;
+        }
+    }
+}
+li.moreContent__items {
+    list-style: none;
+    padding-bottom: 12px;
+    .moreContent__option {
+        font-size: 14px;
+    }
+    .moreContent__option:hover {
+        cursor: pointer;
+    }
+    .moreContentIcon {
+        margin-right: 8.6px;
+        vertical-align: middle;
+    }
+}
+
+.devicesWrapper,
+.ant-input-affix-wrapper {
+    gap: 10px;
+    padding: 12px;
+    &__search {
+        width: 300px;
+        height: 40px;
+        background: $neutral-6;
+        border: none;
+        border-radius: 8px;
+        input.ant-input {
+            background: $neutral-6;
+        }
+        span {
+            color: $title-45;
+        }
+    }
+    &__tableEmpty {
+        display: flex;
+        flex-direction: column;
+        padding: 120px;
+        .EmptyDataComponent__buttons__customButton {
+            padding-top: 30px;
+        }
+        .EmptyDataComponent__buttons__customButton button {
+            width: 143px;
+            margin: 0 auto;
+        }
+        .bulk-importbtn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__drawer {
+        position: absolute;
+        width: 720px;
+        height: 100%;
+        right: 0px;
+        bottom: 0px;
+        background: #ffffff;
+        box-shadow: 9px 0px 22px rgba(0, 0, 0, 0.1);
+        border-radius: 8px 0px 0px 8px;
+    }
+    .ant-card {
+        height: calc(100vh - 218px);
+        margin: auto;
+    }
+    .ant-card-body {
+        height: 100%;
+    }
+}
+.devicesWrapper__blaList {
+    padding-top: 12px;
+    overflow-y: scroll;
+}
+.devicesWrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 100px 133px 124px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+.confirmationModal.noBla {
+    .ant-modal-content .ant-modal-body span {
+        width: 400px;
+    }
+}
+.confirmationModal.moreContent {
+    .ant-modal-content .ant-modal-body span {
+        width: 445px;
+    }
+}
+.parentChildActivationModal.tagsActivation {
+    width: 1096px !important;
+
+    margin: 0 auto;
+}
+.device__switch {
+    .ant-switch.ant-switch-small {
+        width: 28px;
+    }
+}
+
+.deviceName {
+    width: 127px;
+}
+
+span.anticon.anticon-caret-up.ant-table-column-sorter-up.active,
+span.anticon.anticon-caret-down.ant-table-column-sorter-down.active {
+    color: #00000073;
+}
+.ant-btn-default.ant-dropdown-trigger.ant-dropdown-open:hover {
+    color: black !important;
+    border-color: #d9d9d9 !important;
+}
+
+.ant-btn-default.ant-dropdown-trigger.ant-dropdown-open {
+    span.anticon.anticon-down {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../../../styles/global-settings.scss';
+
+.criticalParametersTrendAreaWrapper {
+    height: 693px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-weight: 500;
+    .ant-card-body {
+        height: 100%;
+        .multiAxis {
+            height: 100%;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header-exportButton {
+        .custom-apply:hover {
+            background: transparent !important;
+            border: 1px solid $primary-5;
+        }
+        button {
+            border: 1px solid var(--neutral-5, #d9d9d9);
+            background: transparent;
+            div:nth-child(1) {
+                background-color: transparent;
+            }
+
+            span:nth-child(1) {
+                svg {
+                    fill: $title-45;
+                    color: $title-45;
+                    stroke: none;
+                }
+            }
+            span:nth-child(2) {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+    .custom-download.as.csv {
+        svg {
+            color: $title-85;
+            stroke: none !important;
+        }
+        span {
+            color: $title-85;
+        }
+        path {
+            fill: $title-85;
+        }
+    }
+}
+
+.criticalParametersTrendEmptyTrendWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

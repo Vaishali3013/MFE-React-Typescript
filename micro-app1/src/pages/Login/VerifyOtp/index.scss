@@ -1,0 +1,33 @@
+@import '../../../styles/global-settings.scss';
+
+.verifyotp {
+  #login_form {
+    .ant-form-item.otp-mb {
+      margin-bottom: 0 !important;
+      .ant-form-item-explain-error {
+        position: absolute;
+        top: 47px;
+        left: 0;
+      }
+    }
+    .otp-message {
+      text-align: right;
+      display: block;
+    }
+    .login-btn {
+      margin-top: 40px;
+      .button-disabled {
+        background: $neutral-3 !important;
+      }
+    }
+    .ant-form-item-explain-success {
+      color: $yellow-1;
+      position: absolute;
+      left: 0;
+  }
+  
+  .ant-input-affix-wrapper-status-success {
+      border-color: $yellow-1;
+  }
+  }
+}

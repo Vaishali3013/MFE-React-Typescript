@@ -1,0 +1,26 @@
+@import '../../../styles/global-settings.scss';
+
+.dataModel {
+    @include flexprob;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    &__card {
+        margin: auto;
+        background: white;
+        width: 70%;
+        border-radius: 10px;
+        @include flexprob;
+        height: 117px;
+    }
+    .active {
+        border: 1px solid rgba(255, 92, 0, 0.85);
+        background: rgba(255, 239, 229, 1);
+    }
+    &__content {
+        height: 100%;
+        @include flexprob;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

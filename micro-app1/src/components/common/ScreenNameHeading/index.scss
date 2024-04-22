@@ -1,0 +1,16 @@
+@import '../../../styles/global-settings.scss';
+
+.screenNameHeading {
+    &__heading {
+        span {
+            @include textfontstyle;
+            color: $title-85;
+        }
+    }
+    &__subHeading {
+        span {
+            @include textfontstyle;
+            color: $title-45;
+        }
+    }
+}

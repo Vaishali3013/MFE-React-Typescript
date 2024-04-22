@@ -1,0 +1,188 @@
+@import '../../../styles/global-settings.scss';
+
+// css for table
+.attributeTableWrapper {
+    padding-top: 12px;
+    thead.ant-table-thead {
+        @include textfontstyle;
+        font-weight: 500;
+        font-size: 14px;
+        color: $title-85;
+    }
+    tr.ant-table-row {
+        @include textfontstyle;
+        font-weight: 400;
+        font-size: 14px;
+        color: $title-85;
+    }
+    .column-title,
+    &__columnTitle {
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            display: grid;
+            grid-template-columns: 10% 1fr 10%;
+            justify-content: center;
+            align-items: center;
+
+            .sortArrows {
+                @include flexprob;
+                flex-direction: column;
+                gap: 2px;
+                cursor: pointer;
+            }
+        }
+        .sortArrows,
+        span {
+            @include flexprob;
+            flex-direction: column;
+            gap: 2px;
+            cursor: pointer;
+        }
+    }
+    &__nameData {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        width: 190px;
+        .viewName {
+            margin-left: 0px;
+            display: flex;
+        }
+        .otp-btn {
+            background-color: $red-3;
+            border-radius: 20px;
+            color: #fff;
+            margin-left: 10px;
+            padding: 0;
+            width: 50px;
+            height: 23px;
+            border: 0;
+            span {
+                line-height: 24px;
+            }
+        }
+        span {
+            @include textfontstyle;
+        }
+        span.ant-avatar.ant-avatar-circle.mr-10 {
+            background-color: $volcano-4;
+            color: $neutral-1;
+            margin-right: 10px;
+        }
+        .name {
+            color: $primary-4;
+        }
+    }
+    &__status {
+        @include flexprob;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    &__roles {
+        width: 80px;
+    }
+    &__createdBy {
+        width: 120px;
+    }
+
+    &__subItems {
+        // width: 180px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.attribute__statusFilter {
+    display: flex;
+    flex-direction: column;
+    .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+        border-color: $primary-6;
+        background-color: $neutral-1;
+    }
+    .ant-radio-wrapper .ant-radio-inner::after {
+        background-color: $primary-6;
+    }
+}
+
+// more content
+.moreContent__items {
+    list-style: none;
+    padding-bottom: 12px;
+}
+.moreContent__items:last-child {
+    padding-bottom: 0px !important;
+}
+
+.moreContent__option {
+    font-size: 14px;
+}
+
+.moreContent__option:hover {
+    cursor: pointer;
+}
+
+.moreContentIcon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+}
+
+// table column
+
+.column__name {
+    width: 236px;
+    padding: 11px 0 !important;
+}
+.column__description {
+    width: 163px;
+    padding: 11px 16px !important;
+}
+.column__properties {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+.column__category {
+    width: 119px;
+    padding: 11px 16px !important;
+}
+.column__uom {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+.column__valueType {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+
+.column__dataReference {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+
+.column__displayDigits {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+
+.column__industry {
+    width: 99px;
+    padding: 11px 16px !important;
+}
+
+.custom-popover-content {
+    width: 204px;
+}
+.moreContent__option.disable {
+    pointer-events: none;
+}
+
+.attributeTable__subItems {
+    height: 32px;
+    // width: 32px;
+    border-radius: 50%;
+    background-color: $neutral-4;
+    text-align: center;
+    color: $gray-6;
+    font-size: 14px;
+    padding: 5px;
+}

@@ -1,0 +1,54 @@
+@import '../../../../styles/global-settings.scss';
+
+.feedWaterWrapper {
+    height: 187px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-weight: 500;
+    .ant-card-body {
+        height: 100%;
+    }
+    &__div {
+        width: 100%;
+        height: 100%;
+    }
+    &__value {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__column {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        color: $title-85;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.96px;
+    }
+    &__degree {
+        color: $title-45;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.72px;
+    }
+    &__num {
+        color: $black;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__val {
+        color: $title-45;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    &__charts {
+        width: 100%;
+        height: 100%;
+    }
+    &__loader {
+        @include flexprob;
+        height: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+@import '../../../styles/global-settings.scss';
+
+.dataVisualizationDashboard {
+    .hide-row {
+        display: none;
+    }
+    .card-heading {
+        height: 116px;
+    }
+    .dataVisualizationWrapperScrolContent {
+        overflow-y: scroll;
+        height: calc(100vh - 180px);
+    }
+
+    .ant-card .ant-card-body {
+        padding-right: 20px;
+        padding-top: 16px;
+    }
+    .dataVisualizationWrapper {
+        @include fontTextStyle;
+    }
+}
+
+.data-visualization-container {
+    background-color: white;
+    height: calc(100vh - 186px);
+    margin: 8px;
+    display: flex;
+    .ant-table-wrapper.child {
+        overflow-y: auto !important;
+        height: calc(100vh - 330px) !important;
+    }
+    .ant-table-wrapper {
+        overflow-y: auto;
+        &.trending-page {
+            height: calc(100vh - 640px);
+        }
+        &.other-page {
+            height: calc(100vh - 255px);
+        }
+    }
+    .ant-table-selection {
+        display: none !important;
+    }
+    .twenty {
+        width: 20%;
+        padding: 8px;
+        .device-tag-selector-header {
+            display: flex;
+            place-content: space-between;
+        }
+        .child {
+            padding: 4px;
+        }
+    }
+    .search-tag {
+        margin-left: 4px;
+        width: calc(100% - 7px);
+    }
+    .eighty {
+        width: 80%;
+    }
+    &__header {
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__multiAxisChart{
+        height: 400px;
+    }
+    &__header-exportButton {
+        button {
+            .export-name{
+                color: $primary-5 !important;
+            }
+            border: 1px solid var(--neutral-5, #d9d9d9);
+            background: transparent;
+
+            span:nth-child(1) {
+                svg {
+                    fill: $title-45;
+                    color: $title-45;
+                    stroke: none;
+                }
+            }
+            span:nth-child(2) {
+                color: $title-85;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        button:hover {
+            border: 1px solid $primary-5;
+            background-color: transparent !important;
+
+            span:nth-child(1),
+            .custom-download.as.csv {
+                svg {
+                    color: $primary-5 !important;
+                    stroke: none;
+                }
+                span {
+                    color: $primary-5 !important;
+                }
+                path {
+                    fill: $primary-5 !important;
+                }
+            }
+            span:nth-child(2) {
+                color: $primary-5 !important;
+            }
+        }
+    }
+    .custom-download.as.csv {
+        svg {
+            color: $title-85;
+            stroke: none !important;
+        }
+        span {
+            color: $title-85;
+        }
+        path {
+            fill: $title-85;
+        }
+    }
+}

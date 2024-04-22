@@ -1,0 +1,12 @@
+@import '../../../../styles/global-settings.scss';
+
+.accountSettingsHeader {
+  background-color: blue;
+  height: 104px;
+  position: relative;
+
+  &__child {
+    padding: 27px 24px;
+    background-color: $neutral-1;
+  }
+}

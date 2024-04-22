@@ -1,0 +1,101 @@
+@import '../../../../styles/global-settings.scss';
+.groupTableWrapper {
+    padding-top: 12px;
+    thead.ant-table-thead {
+        @include textfontstyle;
+        font-weight: 500;
+        font-size: 14px;
+        color: $title-85;
+    }
+    tr.ant-table-row {
+        @include textfontstyle;
+        font-weight: 400;
+        font-size: 14px;
+        color: $title-85;
+    }
+    .column-title,
+    &__columnTitle {
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            display: grid;
+            grid-template-columns: 10% 1fr 10%;
+            justify-content: center;
+            align-items: center;
+            .sortArrows {
+                @include flexprob;
+                flex-direction: column;
+                gap: 2px;
+            }
+        }
+        .sortArrows {
+            @include flexprob;
+            flex-direction: column;
+            gap: 2px;
+        }
+    }
+    &__nameData {
+        color: $button;
+        display: flex;
+        gap: 15px;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            @include textfontstyle;
+        }
+    }
+    &__nameData:hover {
+        cursor: pointer;
+    }
+    &__status {
+        @include flexprob;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+}
+.moreContent__items {
+    list-style: none;
+    padding-bottom: 12px;
+}
+.moreContent__option {
+    font-size: 14px;
+}
+.moreContent__option:hover {
+    cursor: pointer;
+}
+.moreContent__icon {
+    margin-right: 8.6px;
+    vertical-align: middle;
+}
+.groupTable__subItems {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: $neutral-4;
+    text-align: center;
+    color: $gray-6;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.subItems {
+    width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.role-permissionlist {
+    padding-left: 50px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 10px;
+}
+.groupEditModal span {
+    text-align: center;
+    display: block;
+}
+.groupEditModal .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

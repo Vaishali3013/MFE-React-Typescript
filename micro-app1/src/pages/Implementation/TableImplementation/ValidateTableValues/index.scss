@@ -1,0 +1,17 @@
+@import '../../../../styles/colorVariable';
+
+.newRowBtn {
+    width: 100px;
+    float: inline-end;
+    margin-right: 30px;
+    color: $primary-3;
+    border-radius: 2px;
+}
+
+.editable-row .ant-table-cell .ant-form-item-has-error {
+    border: 1px solid $red-3;
+    border-radius: 2px;
+}
+.ant-table-thead > tr > th.editableColumn {
+    padding-left: 26px;
+}
